@@ -150,7 +150,7 @@
             this.PanelUsuarios.Controls.Add(this.panel6);
             this.PanelUsuarios.Location = new System.Drawing.Point(471, 44);
             this.PanelUsuarios.Name = "PanelUsuarios";
-            this.PanelUsuarios.Size = new System.Drawing.Size(241, 308);
+            this.PanelUsuarios.Size = new System.Drawing.Size(245, 437);
             this.PanelUsuarios.TabIndex = 612;
             this.PanelUsuarios.Visible = false;
             // 
@@ -159,7 +159,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 81);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(245, 210);
             this.flowLayoutPanel1.TabIndex = 616;
             this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
             // 
@@ -171,7 +171,7 @@
             this.Label8.ForeColor = System.Drawing.Color.White;
             this.Label8.Location = new System.Drawing.Point(0, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(241, 125);
+            this.Label8.Size = new System.Drawing.Size(245, 125);
             this.Label8.TabIndex = 615;
             this.Label8.Text = "¿Quien esta Iniciando Sesion?";
             this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,9 +180,9 @@
             // 
             this.panel6.Controls.Add(this.button1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 206);
+            this.panel6.Location = new System.Drawing.Point(0, 335);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(241, 102);
+            this.panel6.Size = new System.Drawing.Size(245, 102);
             this.panel6.TabIndex = 617;
             // 
             // button1
@@ -247,6 +247,7 @@
             this.Button2.TabIndex = 623;
             this.Button2.Text = "¿Olvidaste tu contraseña?";
             this.Button2.UseVisualStyleBackColor = false;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // PictureBox4
             // 
@@ -994,7 +995,6 @@
             this.PanelRestaurarCuenta.Name = "PanelRestaurarCuenta";
             this.PanelRestaurarCuenta.Size = new System.Drawing.Size(387, 287);
             this.PanelRestaurarCuenta.TabIndex = 617;
-            this.PanelRestaurarCuenta.Visible = false;
             // 
             // txtcorreo
             // 

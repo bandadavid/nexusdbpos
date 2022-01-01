@@ -158,6 +158,7 @@ namespace Ada369Csharp.Presentacion
             escalar_paneles();
             Bases.Obtener_serialPC(ref lblSerialPc);
             ObtenerIpLocal();
+            PanelRestaurarCuenta.Visible = false;
         }
         private void ObtenerIpLocal()
         {
@@ -798,6 +799,14 @@ namespace Ada369Csharp.Presentacion
             PanelUsuarios.Visible = true;
             PanelIngreso_de_contraseña.Visible = false;
             txtpaswwor.Clear();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            PanelIngreso_de_contraseña.Visible = false;
+            PanelRestaurarCuenta.Visible = true;
+            mostrar_correos();
+            PanelUsuarios.Visible = true;
         }
     }
 }
