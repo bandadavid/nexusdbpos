@@ -74,7 +74,7 @@ namespace Ada369Csharp.Presentacion.VENTAS_MENU_PRINCIPAL
             ValidarTemaCaja();
             Limpiar_para_venta_nueva();
             ObtenerIpLocal();
-
+            datosEmpresa();
 
         }
         private void ValidarTiposBusqueda()
@@ -159,9 +159,54 @@ namespace Ada369Csharp.Presentacion.VENTAS_MENU_PRINCIPAL
             EstadoMediosPago = false;
         }
 
+        private void calcularImpuesto()
+        {
+            
+
+
+        }
+
+
+        public void datosEmpresa()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                
+                SqlDataAdapter da;
+                CONEXION.CONEXIONMAESTRA.abrir();
+                da = new SqlDataAdapter("mostrar_Empresa", CONEXION.CONEXIONMAESTRA.conectar);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.Fill(dt);
+                dataempresa.DataSource = dt;
+                CONEXION.CONEXIONMAESTRA.cerrar();
+                dataempresa.Columns[0].Visible = false;
+                dataempresa.Columns[1].Visible = false;
+                dataempresa.Columns[2].Visible = true;
+                dataempresa.Columns[3].Visible = false;
+                dataempresa.Columns[4].Visible = true;
+                dataempresa.Columns[5].Visible = true;
+                dataempresa.Columns[6].Visible = false;
+                dataempresa.Columns[7].Visible = false;
+                dataempresa.Columns[8].Visible = false;
+                dataempresa.Columns[9].Visible = false;
+                dataempresa.Columns[10].Visible =false;
+                dataempresa.Columns[11].Visible =false;
+                dataempresa.Columns[12].Visible =false;
+                labeligv.Text = dataempresa.Rows[0].Cells[2].Value as string;
+
+            }
+            catch (Exception ex)
+            {
+                CONEXION.CONEXIONMAESTRA.cerrar();
+                MessageBox.Show(ex.StackTrace);
+            }
+        }
+
 
         private void sumar()
         {
+            Double impuesto;
             try
             {
 
@@ -169,16 +214,32 @@ namespace Ada369Csharp.Presentacion.VENTAS_MENU_PRINCIPAL
                 x = dgDetalleventa.Rows.Count;
                 if (x == 0)
                 {
-                    txt_total_suma.Text = "0.00";
+                    lblsubtotal.Text = "0.00";
+                    
                 }
 
                 double totalpagar;
+                double totalsubtotal;
                 totalpagar = 0;
+                totalsubtotal = 0;
                 foreach (DataGridViewRow fila in dgDetalleventa.Rows)
                 {
-
                     totalpagar += Convert.ToDouble(fila.Cells["Importe"].Value);
-                    txt_total_suma.Text = Convert.ToString(totalpagar);
+                    totalsubtotal = totalpagar / 1.12;
+                    
+                    lblsubtotal.Text = Convert.ToString(Math.Round(totalsubtotal, 2));
+
+                    //Sacar Iva
+                    double impuestosinPorciento = Convert.ToDouble(dataempresa.Rows[0].Cells[5].Value) / 100; //0.12
+
+                    double iva = totalsubtotal * impuestosinPorciento;
+
+                    lbligv.Text = Convert.ToString(Math.Round(iva, 2));
+
+                    double totalsumaglobal = totalsubtotal + iva;
+
+                    txt_total_suma.Text = Convert.ToString(Math.Round(totalsumaglobal, 2));
+
 
                 }
             }

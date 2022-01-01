@@ -55,6 +55,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelC1 = new System.Windows.Forms.Panel();
+            this.dataempresa = new System.Windows.Forms.DataGridView();
             this.BTNTECLADO = new System.Windows.Forms.Button();
             this.BTNLECTORA = new System.Windows.Forms.Button();
             this.panelReferenciaProductos = new System.Windows.Forms.Panel();
@@ -290,6 +291,7 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelC1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataempresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_stock_detalle_venta)).BeginInit();
@@ -346,6 +348,7 @@
             // PanelC1
             // 
             this.PanelC1.BackColor = System.Drawing.Color.White;
+            this.PanelC1.Controls.Add(this.dataempresa);
             this.PanelC1.Controls.Add(this.BTNTECLADO);
             this.PanelC1.Controls.Add(this.BTNLECTORA);
             this.PanelC1.Controls.Add(this.panelReferenciaProductos);
@@ -369,6 +372,15 @@
             this.PanelC1.Size = new System.Drawing.Size(1498, 47);
             this.PanelC1.TabIndex = 507;
             this.PanelC1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel17_Paint);
+            // 
+            // dataempresa
+            // 
+            this.dataempresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataempresa.Location = new System.Drawing.Point(1094, 6);
+            this.dataempresa.Name = "dataempresa";
+            this.dataempresa.Size = new System.Drawing.Size(85, 37);
+            this.dataempresa.TabIndex = 614;
+            this.dataempresa.Visible = false;
             // 
             // BTNTECLADO
             // 
@@ -2764,11 +2776,11 @@
             this.labeligv.BackColor = System.Drawing.Color.Transparent;
             this.labeligv.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.labeligv.ForeColor = System.Drawing.Color.DimGray;
-            this.labeligv.Location = new System.Drawing.Point(16, 389);
+            this.labeligv.Location = new System.Drawing.Point(18, 389);
             this.labeligv.Name = "labeligv";
-            this.labeligv.Size = new System.Drawing.Size(103, 22);
+            this.labeligv.Size = new System.Drawing.Size(101, 22);
             this.labeligv.TabIndex = 507;
-            this.labeligv.Text = "IGV (18%) :";
+            this.labeligv.Text = "IVA (12%) :";
             // 
             // txtmonto
             // 
@@ -2821,7 +2833,7 @@
             this.Label36.BackColor = System.Drawing.Color.Transparent;
             this.Label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.Label36.ForeColor = System.Drawing.Color.DimGray;
-            this.Label36.Location = new System.Drawing.Point(26, 362);
+            this.Label36.Location = new System.Drawing.Point(26, 364);
             this.Label36.Name = "Label36";
             this.Label36.Size = new System.Drawing.Size(93, 22);
             this.Label36.TabIndex = 507;
@@ -3554,6 +3566,7 @@
             this.Load += new System.EventHandler(this.VENTAS_MENU_PRINCIPALOK_Load);
             this.PanelC1.ResumeLayout(false);
             this.PanelC1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataempresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -3870,5 +3883,6 @@
         private System.Windows.Forms.Button BTNLECTORA;
         private System.Windows.Forms.Panel panelNotificacionEspera;
         private System.Windows.Forms.Label lblContadorEspera;
+        private System.Windows.Forms.DataGridView dataempresa;
     }
 }
