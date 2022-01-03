@@ -159,6 +159,8 @@ namespace Ada369Csharp.Presentacion
             Bases.Obtener_serialPC(ref lblSerialPc);
             ObtenerIpLocal();
             PanelRestaurarCuenta.Visible = false;
+            MOSTRAR_CAJA_POR_SERIAL();
+            lblcaja.Text = datalistado_caja.Rows[0].Cells[1].Value.ToString();
         }
         private void ObtenerIpLocal()
         {
@@ -260,20 +262,20 @@ namespace Ada369Csharp.Presentacion
                 cmd = new SqlCommand("insertar_DETALLE_cierre_de_caja", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@fechaini",DateTime.Now );
-            cmd.Parameters.AddWithValue("@fechafin", DateTime.Now);
+                cmd.Parameters.AddWithValue("@fechafin", DateTime.Now);
                 //cmd.Parameters.AddWithValue("@fecha", DateTime.Today);
 
                 cmd.Parameters.AddWithValue("@fechacierre", DateTime.Now);
-            cmd.Parameters.AddWithValue("@ingresos", "0.00");
-            cmd.Parameters.AddWithValue("@egresos", "0.00");
-            cmd.Parameters.AddWithValue("@saldo", "0.00");
-            cmd.Parameters.AddWithValue("@idusuario", idusuariovariable);
-            cmd.Parameters.AddWithValue("@totalcaluclado", "0.00");
-            cmd.Parameters.AddWithValue("@totalreal", "0.00");
+                cmd.Parameters.AddWithValue("@ingresos", "0.00");
+                cmd.Parameters.AddWithValue("@egresos", "0.00");
+                cmd.Parameters.AddWithValue("@saldo", "0.00");
+                cmd.Parameters.AddWithValue("@idusuario", idusuariovariable);
+                cmd.Parameters.AddWithValue("@totalcaluclado", "0.00");
+                cmd.Parameters.AddWithValue("@totalreal", "0.00");
 
-            cmd.Parameters.AddWithValue("@estado", "CAJA APERTURADA");
-            cmd.Parameters.AddWithValue("@diferencia", "0.00");
-            cmd.Parameters.AddWithValue("@id_caja", idcajavariable );
+                cmd.Parameters.AddWithValue("@estado", "CAJA APERTURADA");
+                cmd.Parameters.AddWithValue("@diferencia", "0.00");
+                cmd.Parameters.AddWithValue("@id_caja", lblcaja.Text);
 
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -298,24 +300,23 @@ namespace Ada369Csharp.Presentacion
         }
         private void Iniciar_sesion_correcto()
         {
-            cargarusuarios();
-            contar();
+          cargarusuarios();
+          contar();
             
           if (contador > 0)
             {
-            obtener_idusuario();
-            mostrar_roles();
-               if (lblRol !=cajero )
-                 {
-                   timerValidarRol.Start();
-                 }
-               else if(lblRol ==cajero)
-                 {
-                    validar_aperturas_de_caja();
-                 }
-            }
 
-       
+                obtener_idusuario();
+                mostrar_roles();
+                if (lblRol !=cajero )
+                {
+                    timerValidarRol.Start();
+                }
+                else if(lblRol ==cajero)
+                {
+                    validar_aperturas_de_caja();
+                }
+            }
         }
         private void obtener_usuario_que_aperturo_caja()
         {
@@ -338,7 +339,6 @@ namespace Ada369Csharp.Presentacion
                 aperturar_detalle_de_cierre_caja();
                 lblApertura_De_caja = "Nuevo*****";
                 timerValidarRol.Start();
-                
             }
             else
             {
@@ -490,9 +490,6 @@ namespace Ada369Csharp.Presentacion
                 con.Open();
                 lblResultadoContraseña.Text  =  Convert.ToString (da.ExecuteScalar());
                 con.Close();
-
-
-
             }
             catch (Exception ex)
             {
@@ -512,8 +509,9 @@ namespace Ada369Csharp.Presentacion
         private void enviarCorreo()
         {
             mostrar_usuarios_por_correo();
-            richTextBox1.Text = richTextBox1.Text.Replace("@pass", lblResultadoContraseña.Text );
-            Bases.enviarCorreo("francisco.udemy.2020@gmail.com","asdasdasd", richTextBox1.Text, "Solicitud de Contraseña",  txtcorreo.Text, "");
+            richTextBox1.Text = richTextBox1.Text.Replace("@pass", Bases.Desencriptar(lblResultadoContraseña.Text));
+            Bases.enviarCorreo("david.banda3824@utc.edu.ec", "Xpango2011//", richTextBox1.Text, "Solicitud de Contraseña",  txtcorreo.Text, "");
+            PanelRestaurarCuenta.Visible = false;
 
         }
         private void MOSTRAR_CAJA_POR_SERIAL()

@@ -177,6 +177,7 @@ namespace Ada369Csharp.Logica
                 envios.Port = 587;
                 envios.EnableSsl = true;
                 envios.Send(correos);
+                MessageBox.Show("Credencial enviada exitosamente", "Restauracion de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             }
             catch (Exception )

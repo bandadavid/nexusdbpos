@@ -364,7 +364,7 @@
             this.txtpaswwor.Name = "txtpaswwor";
             this.txtpaswwor.PasswordChar = '*';
             this.txtpaswwor.Size = new System.Drawing.Size(286, 31);
-            this.txtpaswwor.TabIndex = 604;
+            this.txtpaswwor.TabIndex = 29;
             this.txtpaswwor.TextChanged += new System.EventHandler(this.txtpaswwor_TextChanged);
             // 
             // btn0
@@ -660,7 +660,7 @@
             this.datalistado_movimientos_validar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn3});
             this.datalistado_movimientos_validar.EnableHeadersVisualStyles = false;
-            this.datalistado_movimientos_validar.Location = new System.Drawing.Point(12, 34);
+            this.datalistado_movimientos_validar.Location = new System.Drawing.Point(211, 148);
             this.datalistado_movimientos_validar.Name = "datalistado_movimientos_validar";
             this.datalistado_movimientos_validar.ReadOnly = true;
             this.datalistado_movimientos_validar.RowHeadersVisible = false;
@@ -692,7 +692,7 @@
             this.datalistado_detalle_cierre_de_caja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn2});
             this.datalistado_detalle_cierre_de_caja.EnableHeadersVisualStyles = false;
-            this.datalistado_detalle_cierre_de_caja.Location = new System.Drawing.Point(-38, 54);
+            this.datalistado_detalle_cierre_de_caja.Location = new System.Drawing.Point(229, 131);
             this.datalistado_detalle_cierre_de_caja.Name = "datalistado_detalle_cierre_de_caja";
             this.datalistado_detalle_cierre_de_caja.ReadOnly = true;
             this.datalistado_detalle_cierre_de_caja.RowHeadersVisible = false;
@@ -724,7 +724,7 @@
             this.datalistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eli});
             this.datalistado.EnableHeadersVisualStyles = false;
-            this.datalistado.Location = new System.Drawing.Point(24, 15);
+            this.datalistado.Location = new System.Drawing.Point(329, 55);
             this.datalistado.Name = "datalistado";
             this.datalistado.ReadOnly = true;
             this.datalistado.RowHeadersVisible = false;
@@ -756,6 +756,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.datalistado_caja);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.datalistado_licencia_temporal);
             this.panel5.Controls.Add(this.LBLESTADOLicenciaLocal);
@@ -763,11 +764,10 @@
             this.panel5.Controls.Add(this.datalistado_USUARIOS_REGISTRADOS);
             this.panel5.Controls.Add(this.txtfecha_inicio_licencia);
             this.panel5.Controls.Add(this.progressBar1);
+            this.panel5.Controls.Add(this.lblcaja);
             this.panel5.Controls.Add(this.txtfecha_final_licencia_temporal);
             this.panel5.Controls.Add(this.datalistado_detalle_cierre_de_caja);
-            this.panel5.Controls.Add(this.datalistado_caja);
             this.panel5.Controls.Add(this.richTextBox1);
-            this.panel5.Controls.Add(this.lblcaja);
             this.panel5.Controls.Add(this.datalistado);
             this.panel5.Controls.Add(this.lblResultadoContraseña);
             this.panel5.Controls.Add(this.txtcontador);
@@ -802,7 +802,7 @@
             this.datalistado_licencia_temporal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn5});
             this.datalistado_licencia_temporal.EnableHeadersVisualStyles = false;
-            this.datalistado_licencia_temporal.Location = new System.Drawing.Point(12, 31);
+            this.datalistado_licencia_temporal.Location = new System.Drawing.Point(211, 201);
             this.datalistado_licencia_temporal.Name = "datalistado_licencia_temporal";
             this.datalistado_licencia_temporal.ReadOnly = true;
             this.datalistado_licencia_temporal.RowHeadersVisible = false;
@@ -844,7 +844,7 @@
             this.datalistado_USUARIOS_REGISTRADOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn4});
             this.datalistado_USUARIOS_REGISTRADOS.EnableHeadersVisualStyles = false;
-            this.datalistado_USUARIOS_REGISTRADOS.Location = new System.Drawing.Point(-13, 29);
+            this.datalistado_USUARIOS_REGISTRADOS.Location = new System.Drawing.Point(177, 175);
             this.datalistado_USUARIOS_REGISTRADOS.Name = "datalistado_USUARIOS_REGISTRADOS";
             this.datalistado_USUARIOS_REGISTRADOS.ReadOnly = true;
             this.datalistado_USUARIOS_REGISTRADOS.RowHeadersVisible = false;
@@ -874,7 +874,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(-54, 48);
+            this.progressBar1.Location = new System.Drawing.Point(201, 307);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(207, 23);
             this.progressBar1.TabIndex = 620;
@@ -900,7 +900,7 @@
             this.datalistado_caja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn1});
             this.datalistado_caja.EnableHeadersVisualStyles = false;
-            this.datalistado_caja.Location = new System.Drawing.Point(28, 11);
+            this.datalistado_caja.Location = new System.Drawing.Point(112, -6);
             this.datalistado_caja.Name = "datalistado_caja";
             this.datalistado_caja.ReadOnly = true;
             this.datalistado_caja.RowHeadersVisible = false;
@@ -909,7 +909,7 @@
             this.datalistado_caja.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistado_caja.RowTemplate.Height = 30;
             this.datalistado_caja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado_caja.Size = new System.Drawing.Size(67, 38);
+            this.datalistado_caja.Size = new System.Drawing.Size(316, 204);
             this.datalistado_caja.TabIndex = 614;
             // 
             // dataGridViewImageColumn1
@@ -932,7 +932,7 @@
             // 
             this.lblcaja.AutoSize = true;
             this.lblcaja.BackColor = System.Drawing.Color.White;
-            this.lblcaja.Location = new System.Drawing.Point(17, 55);
+            this.lblcaja.Location = new System.Drawing.Point(174, 56);
             this.lblcaja.Name = "lblcaja";
             this.lblcaja.Size = new System.Drawing.Size(37, 13);
             this.lblcaja.TabIndex = 618;
