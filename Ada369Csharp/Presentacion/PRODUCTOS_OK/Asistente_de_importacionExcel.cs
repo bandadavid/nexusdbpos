@@ -28,8 +28,19 @@ namespace Ada369Csharp.Presentacion.PRODUCTOS_OK
         {
             try
             {
-            
-                
+                /*string ruta;
+                if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    ruta = folderBrowserDialog1.SelectedPath + "ProductosNexusDB.xlsx";
+                    SLDocument NombredeExcel = new SLDocument();
+                    System.Data.DataTable dt = new System.Data.DataTable();
+                    dt.Columns.Add("Descripcion", typeof(string));
+                    dt.Columns.Add("Codigo", typeof(string));
+                    NombredeExcel.ImportDataTable(1, 1, dt, true);
+                    NombredeExcel.SaveAs(ruta);
+                    MessageBox.Show("Plantilla Obtenida ubicala en: " + ruta, "Archivo Excel Creado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }*/
+
             }
             catch (Exception ex)
             {

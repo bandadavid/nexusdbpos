@@ -529,7 +529,6 @@
             this.txtrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtrol.FormattingEnabled = true;
             this.txtrol.Items.AddRange(new object[] {
-            "Solo Ventas (no esta autorizado para manejar dinero)",
             "Cajero (Si esta autorizado para manejar dinero)",
             "Administrador (Control total)"});
             this.txtrol.Location = new System.Drawing.Point(189, 199);

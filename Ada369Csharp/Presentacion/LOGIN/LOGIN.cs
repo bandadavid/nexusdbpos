@@ -34,7 +34,6 @@ namespace Ada369Csharp.Presentacion
         string lblSerialPc;
         string lblSerialPcLocal;
         string cajero= "Cajero (Si esta autorizado para manejar dinero)";
-        string vendedor= "Solo Ventas (no esta autorizado para manejar dinero)";
         string administrador= "Administrador (Control total)";
         string lblRol;
         string txtlogin;
@@ -132,10 +131,8 @@ namespace Ada369Csharp.Presentacion
             {
   
             }
-
-
-
         }
+
         private void miEventoImagen(System.Object sender, EventArgs e)
         {
             txtlogin = Convert.ToString(((PictureBox)sender).Tag);
@@ -158,9 +155,9 @@ namespace Ada369Csharp.Presentacion
             escalar_paneles();
             Bases.Obtener_serialPC(ref lblSerialPc);
             ObtenerIpLocal();
-            PanelRestaurarCuenta.Visible = false;
             MOSTRAR_CAJA_POR_SERIAL();
-            lblcaja.Text = datalistado_caja.Rows[0].Cells[1].Value.ToString();
+            PanelRestaurarCuenta.Visible = false;
+            
         }
         private void ObtenerIpLocal()
         {
@@ -530,7 +527,8 @@ namespace Ada369Csharp.Presentacion
                 da.Fill(dt);
                 datalistado_caja.DataSource = dt;
                 con.Close();
-                
+                lblcaja.Text = datalistado_caja.Rows[0].Cells[1].Value.ToString();
+
             }
             catch (Exception ex)
             {
@@ -756,33 +754,23 @@ namespace Ada369Csharp.Presentacion
                 }
                 else
                 { 
-                if (lblApertura_De_caja == "Nuevo*****" & lblRol == cajero )
-                {
-                    editar_inicio_De_sesion();
-                    Dispose();
-                    CAJA.APERTURA_DE_CAJA  frm = new CAJA.APERTURA_DE_CAJA();
-                    frm.ShowDialog();
+                    if (lblApertura_De_caja == "Nuevo*****" & lblRol == cajero )
+                    {
+                        editar_inicio_De_sesion();
+                        Dispose();
+                        CAJA.APERTURA_DE_CAJA  frm = new CAJA.APERTURA_DE_CAJA();
+                        frm.ShowDialog();
                        
                     }
-               else if (lblApertura_De_caja == "Aperturado" & lblRol == cajero)
-                {
-                    editar_inicio_De_sesion();
-                    Dispose();
-                    VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK frm = new VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK();
-                    frm.ShowDialog();
-                        
+                else 
+                    if (lblApertura_De_caja == "Aperturado" & lblRol == cajero)
+                    {
+                        editar_inicio_De_sesion();
+                        Dispose();
+                        VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK frm = new VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK();
+                        frm.ShowDialog();
                     }
-                else if(lblRol == vendedor)
-                {
-                    editar_inicio_De_sesion();
-                    Dispose();
-                    VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK  frm = new VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK();
-                    frm.ShowDialog();
-                        
-
-                    }
-             }
-
+                }
             }
         }
 

@@ -75,7 +75,7 @@ namespace Ada369Csharp.Presentacion.VENTAS_MENU_PRINCIPAL
             Limpiar_para_venta_nueva();
             ObtenerIpLocal();
             datosEmpresa();
-
+           
         }
         private void ValidarTiposBusqueda()
         {

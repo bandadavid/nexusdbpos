@@ -129,7 +129,6 @@ namespace Ada369Csharp
                                 System.IO.MemoryStream ms = new System.IO.MemoryStream();
                                 ICONO.Image.Save(ms, ICONO.Image.RawFormat);
 
-
                                 cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
                                 cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
                                 cmd.Parameters.AddWithValue("@Estado", "ACTIVO");
@@ -138,6 +137,7 @@ namespace Ada369Csharp
                                 con.Close();
                                 mostrar();
                                 panelRegistros.Visible = false;
+                                panelNuevo.Visible = true;
                             }
                             catch (Exception ex)
                             {
@@ -174,20 +174,20 @@ namespace Ada369Csharp
         {
             try
             {
-DataTable dt = new DataTable();
-            SqlDataAdapter da;
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
-            con.Open();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.conexion;
+                con.Open();
          
-            da = new SqlDataAdapter("mostrar_usuario", con);
+                da = new SqlDataAdapter("mostrar_usuario", con);
              
 
 
 
                 da.Fill(dt);
-            datalistado.DataSource = dt;
-            con.Close();
+                datalistado.DataSource = dt;
+                con.Close();
 
                 datalistado.Columns[1].Visible = false;
                 datalistado.Columns[5].Visible = false;
@@ -301,7 +301,7 @@ DataTable dt = new DataTable();
             txtnombre.Text = "";
             txtlogin.Text = "";
             txtPassword.Text = "";
-               txtcorreo .Text = "";
+            txtcorreo .Text = "";
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
         }
@@ -464,7 +464,7 @@ DataTable dt = new DataTable();
             dlg.InitialDirectory = "";
             dlg.Filter = "Imagenes|*.jpg;*.png";
             dlg.FilterIndex = 2;
-            dlg.Title = "Cargador de Imagenes ADA 369";
+            dlg.Title = "Cargador de Imagenes NEXUSDBPOS";
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 ICONO.BackgroundImage = null;

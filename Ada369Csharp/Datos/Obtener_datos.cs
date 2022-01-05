@@ -518,6 +518,8 @@ namespace Ada369Csharp.Datos
                 Monto = 0;
             }
         }
+
+
         public static void ReporteCantClientes(ref int Cantidad)
         {
             try
