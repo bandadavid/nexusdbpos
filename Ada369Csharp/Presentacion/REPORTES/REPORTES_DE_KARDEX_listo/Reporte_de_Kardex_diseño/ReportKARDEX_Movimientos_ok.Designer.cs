@@ -271,7 +271,7 @@
             this.TextBox5.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(7D);
             this.TextBox5.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
             this.TextBox5.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox5.Value = "Reporte generado por Ada369";
+            this.TextBox5.Value = "Reporte generado por NexusDBPOS";
             // 
             // barcode1
             // 

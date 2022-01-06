@@ -10,7 +10,7 @@ namespace Ada369Csharp.CONEXION
       static   private AES aes = new AES();
        static  public string CnString;
        static   string dbcnString ;
-        public  static string appPwdUnique = "Ada369.codigo369.BASEADA.Hola_Mundo";
+        public  static string appPwdUnique = "NexusDB.NexusDBPOS.DAVIDBANDA.Hola_Mundo";
 
 
         public static object checkServer()

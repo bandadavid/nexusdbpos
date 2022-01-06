@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EMPRESA_CONFIG));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Panel16 = new System.Windows.Forms.Panel();
             this.Panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.Panel8 = new System.Windows.Forms.Panel();
             this.LBLIDEMPRESA = new System.Windows.Forms.Label();
             this.txtcorreo = new System.Windows.Forms.TextBox();
@@ -41,8 +42,32 @@
             this.Label18 = new System.Windows.Forms.Label();
             this.Label9 = new System.Windows.Forms.Label();
             this.ToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.Panel10 = new System.Windows.Forms.Panel();
+            this.txtidempresa = new System.Windows.Forms.Label();
+            this.lblvendesconimpuestos = new System.Windows.Forms.Label();
+            this.datalistado_empresas_nuevas = new System.Windows.Forms.DataGridView();
+            this.DataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.txtcontadorcajas = new System.Windows.Forms.Label();
+            this.lblmododebusqueda = new System.Windows.Forms.Label();
+            this.TXTTRABAJASCONIMPUESTOS = new System.Windows.Forms.Label();
+            this.txtcontador_empresas = new System.Windows.Forms.Label();
+            this.lblIDSERIAL = new System.Windows.Forms.Label();
+            this.TabControl3 = new System.Windows.Forms.TabControl();
+            this.TabPage5 = new System.Windows.Forms.TabPage();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.TabPage6 = new System.Windows.Forms.TabPage();
+            this.Label17 = new System.Windows.Forms.Label();
+            this.txtmsbox = new System.Windows.Forms.Label();
+            this.Panel15 = new System.Windows.Forms.Panel();
+            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSIGUIENTE_Y_GUARDAR = new System.Windows.Forms.MenuStrip();
+            this.txtfecha = new System.Windows.Forms.DateTimePicker();
+            this.dlg = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.ToolStripButton22 = new System.Windows.Forms.ToolStripButton();
             this.Panel13 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtteclado = new System.Windows.Forms.CheckBox();
@@ -56,16 +81,6 @@
             this.Label16 = new System.Windows.Forms.Label();
             this.no = new System.Windows.Forms.RadioButton();
             this.si = new System.Windows.Forms.RadioButton();
-            this.Panel10 = new System.Windows.Forms.Panel();
-            this.txtidempresa = new System.Windows.Forms.Label();
-            this.lblvendesconimpuestos = new System.Windows.Forms.Label();
-            this.datalistado_empresas_nuevas = new System.Windows.Forms.DataGridView();
-            this.DataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.txtcontadorcajas = new System.Windows.Forms.Label();
-            this.lblmododebusqueda = new System.Windows.Forms.Label();
-            this.TXTTRABAJASCONIMPUESTOS = new System.Windows.Forms.Label();
-            this.txtcontador_empresas = new System.Windows.Forms.Label();
-            this.lblIDSERIAL = new System.Windows.Forms.Label();
             this.Panel6 = new System.Windows.Forms.Panel();
             this.txtmoneda = new System.Windows.Forms.ComboBox();
             this.TXTPAIS = new System.Windows.Forms.ComboBox();
@@ -76,42 +91,27 @@
             this.lblempresa = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TabControl3 = new System.Windows.Forms.TabControl();
-            this.TabPage5 = new System.Windows.Forms.TabPage();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.TabPage6 = new System.Windows.Forms.TabPage();
             this.PictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Label17 = new System.Windows.Forms.Label();
-            this.txtmsbox = new System.Windows.Forms.Label();
-            this.Panel15 = new System.Windows.Forms.Panel();
-            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSIGUIENTE_Y_GUARDAR = new System.Windows.Forms.MenuStrip();
             this.TSIGUIENTE_Y_GUARDAR_ = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtfecha = new System.Windows.Forms.DateTimePicker();
-            this.dlg = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.Panel16.SuspendLayout();
             this.Panel2.SuspendLayout();
             this.Panel8.SuspendLayout();
             this.ToolStrip1.SuspendLayout();
-            this.Panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
-            this.PanelImpuesto.SuspendLayout();
             this.Panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_empresas_nuevas)).BeginInit();
-            this.Panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenEmpresa)).BeginInit();
             this.TabControl3.SuspendLayout();
             this.TabPage5.SuspendLayout();
             this.TabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             this.Panel15.SuspendLayout();
             this.MenuStrip1.SuspendLayout();
             this.TSIGUIENTE_Y_GUARDAR.SuspendLayout();
+            this.Panel13.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
+            this.PanelImpuesto.SuspendLayout();
+            this.Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel16
@@ -120,7 +120,7 @@
             this.Panel16.Controls.Add(this.Panel2);
             this.Panel16.Controls.Add(this.Panel15);
             this.Panel16.Controls.Add(this.txtfecha);
-            this.Panel16.Location = new System.Drawing.Point(3, 2);
+            this.Panel16.Location = new System.Drawing.Point(-5, 2);
             this.Panel16.Name = "Panel16";
             this.Panel16.Size = new System.Drawing.Size(638, 547);
             this.Panel16.TabIndex = 610;
@@ -145,6 +145,20 @@
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(638, 473);
             this.Panel2.TabIndex = 360;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(604, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 38);
+            this.button1.TabIndex = 600;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Panel8
             // 
@@ -229,6 +243,276 @@
             this.ToolStrip1.TabIndex = 598;
             this.ToolStrip1.Text = "ToolStrip1";
             // 
+            // Panel10
+            // 
+            this.Panel10.Controls.Add(this.txtidempresa);
+            this.Panel10.Controls.Add(this.lblvendesconimpuestos);
+            this.Panel10.Controls.Add(this.datalistado_empresas_nuevas);
+            this.Panel10.Controls.Add(this.txtcontadorcajas);
+            this.Panel10.Controls.Add(this.lblmododebusqueda);
+            this.Panel10.Controls.Add(this.TXTTRABAJASCONIMPUESTOS);
+            this.Panel10.Controls.Add(this.txtcontador_empresas);
+            this.Panel10.Controls.Add(this.lblIDSERIAL);
+            this.Panel10.Location = new System.Drawing.Point(21, 136);
+            this.Panel10.Name = "Panel10";
+            this.Panel10.Size = new System.Drawing.Size(10, 10);
+            this.Panel10.TabIndex = 563;
+            // 
+            // txtidempresa
+            // 
+            this.txtidempresa.AutoSize = true;
+            this.txtidempresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtidempresa.ForeColor = System.Drawing.Color.Black;
+            this.txtidempresa.Location = new System.Drawing.Point(94, 46);
+            this.txtidempresa.Name = "txtidempresa";
+            this.txtidempresa.Size = new System.Drawing.Size(92, 20);
+            this.txtidempresa.TabIndex = 556;
+            this.txtidempresa.Text = "idempresa";
+            // 
+            // lblvendesconimpuestos
+            // 
+            this.lblvendesconimpuestos.AutoSize = true;
+            this.lblvendesconimpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblvendesconimpuestos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblvendesconimpuestos.Location = new System.Drawing.Point(31, 50);
+            this.lblvendesconimpuestos.Name = "lblvendesconimpuestos";
+            this.lblvendesconimpuestos.Size = new System.Drawing.Size(191, 20);
+            this.lblvendesconimpuestos.TabIndex = 342;
+            this.lblvendesconimpuestos.Text = "¿Vendes con Impuestos?";
+            // 
+            // datalistado_empresas_nuevas
+            // 
+            this.datalistado_empresas_nuevas.AllowUserToAddRows = false;
+            this.datalistado_empresas_nuevas.AllowUserToDeleteRows = false;
+            this.datalistado_empresas_nuevas.BackgroundColor = System.Drawing.Color.White;
+            this.datalistado_empresas_nuevas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistado_empresas_nuevas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.datalistado_empresas_nuevas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado_empresas_nuevas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataGridViewCheckBoxColumn2});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistado_empresas_nuevas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.datalistado_empresas_nuevas.EnableHeadersVisualStyles = false;
+            this.datalistado_empresas_nuevas.Location = new System.Drawing.Point(91, 33);
+            this.datalistado_empresas_nuevas.Name = "datalistado_empresas_nuevas";
+            this.datalistado_empresas_nuevas.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistado_empresas_nuevas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.datalistado_empresas_nuevas.RowHeadersVisible = false;
+            this.datalistado_empresas_nuevas.RowHeadersWidth = 5;
+            this.datalistado_empresas_nuevas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datalistado_empresas_nuevas.Size = new System.Drawing.Size(155, 94);
+            this.datalistado_empresas_nuevas.TabIndex = 557;
+            // 
+            // DataGridViewCheckBoxColumn2
+            // 
+            this.DataGridViewCheckBoxColumn2.HeaderText = "Eliminar";
+            this.DataGridViewCheckBoxColumn2.Name = "DataGridViewCheckBoxColumn2";
+            this.DataGridViewCheckBoxColumn2.ReadOnly = true;
+            this.DataGridViewCheckBoxColumn2.Visible = false;
+            // 
+            // txtcontadorcajas
+            // 
+            this.txtcontadorcajas.AutoSize = true;
+            this.txtcontadorcajas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtcontadorcajas.ForeColor = System.Drawing.Color.Black;
+            this.txtcontadorcajas.Location = new System.Drawing.Point(38, 66);
+            this.txtcontadorcajas.Name = "txtcontadorcajas";
+            this.txtcontadorcajas.Size = new System.Drawing.Size(66, 20);
+            this.txtcontadorcajas.TabIndex = 556;
+            this.txtcontadorcajas.Text = "CAJAS";
+            // 
+            // lblmododebusqueda
+            // 
+            this.lblmododebusqueda.AutoSize = true;
+            this.lblmododebusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblmododebusqueda.ForeColor = System.Drawing.Color.Black;
+            this.lblmododebusqueda.Location = new System.Drawing.Point(79, 77);
+            this.lblmododebusqueda.Name = "lblmododebusqueda";
+            this.lblmododebusqueda.Size = new System.Drawing.Size(66, 20);
+            this.lblmododebusqueda.TabIndex = 556;
+            this.lblmododebusqueda.Text = "CAJAS";
+            // 
+            // TXTTRABAJASCONIMPUESTOS
+            // 
+            this.TXTTRABAJASCONIMPUESTOS.AutoSize = true;
+            this.TXTTRABAJASCONIMPUESTOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TXTTRABAJASCONIMPUESTOS.ForeColor = System.Drawing.Color.Black;
+            this.TXTTRABAJASCONIMPUESTOS.Location = new System.Drawing.Point(94, 62);
+            this.TXTTRABAJASCONIMPUESTOS.Name = "TXTTRABAJASCONIMPUESTOS";
+            this.TXTTRABAJASCONIMPUESTOS.Size = new System.Drawing.Size(23, 20);
+            this.TXTTRABAJASCONIMPUESTOS.TabIndex = 342;
+            this.TXTTRABAJASCONIMPUESTOS.Text = "%";
+            // 
+            // txtcontador_empresas
+            // 
+            this.txtcontador_empresas.AutoSize = true;
+            this.txtcontador_empresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtcontador_empresas.ForeColor = System.Drawing.Color.Black;
+            this.txtcontador_empresas.Location = new System.Drawing.Point(19, 33);
+            this.txtcontador_empresas.Name = "txtcontador_empresas";
+            this.txtcontador_empresas.Size = new System.Drawing.Size(66, 20);
+            this.txtcontador_empresas.TabIndex = 556;
+            this.txtcontador_empresas.Text = "CAJAS";
+            // 
+            // lblIDSERIAL
+            // 
+            this.lblIDSERIAL.AutoSize = true;
+            this.lblIDSERIAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblIDSERIAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblIDSERIAL.Location = new System.Drawing.Point(38, 7);
+            this.lblIDSERIAL.Name = "lblIDSERIAL";
+            this.lblIDSERIAL.Size = new System.Drawing.Size(111, 20);
+            this.lblIDSERIAL.TabIndex = 342;
+            this.lblIDSERIAL.Text = "lblIDSERIAL";
+            // 
+            // TabControl3
+            // 
+            this.TabControl3.Controls.Add(this.TabPage5);
+            this.TabControl3.Controls.Add(this.TabPage6);
+            this.TabControl3.Location = new System.Drawing.Point(132, 773);
+            this.TabControl3.Name = "TabControl3";
+            this.TabControl3.SelectedIndex = 0;
+            this.TabControl3.Size = new System.Drawing.Size(396, 95);
+            this.TabControl3.TabIndex = 350;
+            // 
+            // TabPage5
+            // 
+            this.TabPage5.Controls.Add(this.Label4);
+            this.TabPage5.Location = new System.Drawing.Point(4, 22);
+            this.TabPage5.Name = "TabPage5";
+            this.TabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage5.Size = new System.Drawing.Size(388, 69);
+            this.TabPage5.TabIndex = 0;
+            this.TabPage5.Text = "Registro sanitario de Ingreso";
+            this.TabPage5.UseVisualStyleBackColor = true;
+            // 
+            // Label4
+            // 
+            this.Label4.AutoSize = true;
+            this.Label4.ForeColor = System.Drawing.Color.Black;
+            this.Label4.Location = new System.Drawing.Point(12, 31);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(144, 13);
+            this.Label4.TabIndex = 341;
+            this.Label4.Text = "Registro sanitario de Ingreso:";
+            // 
+            // TabPage6
+            // 
+            this.TabPage6.Controls.Add(this.PictureBox4);
+            this.TabPage6.Controls.Add(this.Label17);
+            this.TabPage6.Location = new System.Drawing.Point(4, 22);
+            this.TabPage6.Name = "TabPage6";
+            this.TabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage6.Size = new System.Drawing.Size(388, 69);
+            this.TabPage6.TabIndex = 1;
+            this.TabPage6.Text = "Ficha tecnica";
+            this.TabPage6.UseVisualStyleBackColor = true;
+            // 
+            // Label17
+            // 
+            this.Label17.AutoSize = true;
+            this.Label17.ForeColor = System.Drawing.Color.Black;
+            this.Label17.Location = new System.Drawing.Point(7, 25);
+            this.Label17.Name = "Label17";
+            this.Label17.Size = new System.Drawing.Size(74, 13);
+            this.Label17.TabIndex = 340;
+            this.Label17.Text = "Ficha tecnica:";
+            // 
+            // txtmsbox
+            // 
+            this.txtmsbox.BackColor = System.Drawing.Color.Transparent;
+            this.txtmsbox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmsbox.ForeColor = System.Drawing.Color.White;
+            this.txtmsbox.Location = new System.Drawing.Point(46, 440);
+            this.txtmsbox.Name = "txtmsbox";
+            this.txtmsbox.Size = new System.Drawing.Size(32, 10);
+            this.txtmsbox.TabIndex = 381;
+            this.txtmsbox.Text = "Listo";
+            this.txtmsbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtmsbox.Visible = false;
+            // 
+            // Panel15
+            // 
+            this.Panel15.BackColor = System.Drawing.Color.White;
+            this.Panel15.Controls.Add(this.MenuStrip1);
+            this.Panel15.Controls.Add(this.TSIGUIENTE_Y_GUARDAR);
+            this.Panel15.Location = new System.Drawing.Point(218, 479);
+            this.Panel15.Name = "Panel15";
+            this.Panel15.Size = new System.Drawing.Size(420, 63);
+            this.Panel15.TabIndex = 585;
+            // 
+            // MenuStrip1
+            // 
+            this.MenuStrip1.AutoSize = false;
+            this.MenuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem3});
+            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip1.Location = new System.Drawing.Point(318, 8);
+            this.MenuStrip1.Name = "MenuStrip1";
+            this.MenuStrip1.ShowItemToolTips = true;
+            this.MenuStrip1.Size = new System.Drawing.Size(92, 32);
+            this.MenuStrip1.TabIndex = 584;
+            this.MenuStrip1.Text = "MenuStrip1";
+            // 
+            // ToolStripMenuItem3
+            // 
+            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
+            this.ToolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            this.ToolStripMenuItem3.Size = new System.Drawing.Size(79, 28);
+            this.ToolStripMenuItem3.Text = "Cancelar";
+            // 
+            // TSIGUIENTE_Y_GUARDAR
+            // 
+            this.TSIGUIENTE_Y_GUARDAR.AutoSize = false;
+            this.TSIGUIENTE_Y_GUARDAR.BackColor = System.Drawing.Color.Transparent;
+            this.TSIGUIENTE_Y_GUARDAR.Dock = System.Windows.Forms.DockStyle.None;
+            this.TSIGUIENTE_Y_GUARDAR.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSIGUIENTE_Y_GUARDAR_});
+            this.TSIGUIENTE_Y_GUARDAR.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.TSIGUIENTE_Y_GUARDAR.Location = new System.Drawing.Point(141, 8);
+            this.TSIGUIENTE_Y_GUARDAR.Name = "TSIGUIENTE_Y_GUARDAR";
+            this.TSIGUIENTE_Y_GUARDAR.ShowItemToolTips = true;
+            this.TSIGUIENTE_Y_GUARDAR.Size = new System.Drawing.Size(178, 32);
+            this.TSIGUIENTE_Y_GUARDAR.TabIndex = 583;
+            this.TSIGUIENTE_Y_GUARDAR.Text = "MenuStrip4";
+            // 
+            // txtfecha
+            // 
+            this.txtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtfecha.Location = new System.Drawing.Point(242, 499);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(110, 20);
+            this.txtfecha.TabIndex = 600;
+            // 
+            // dlg
+            // 
+            this.dlg.FileName = "openFileDialog1";
+            // 
             // ToolStripButton22
             // 
             this.ToolStripButton22.BackColor = System.Drawing.Color.White;
@@ -261,6 +545,14 @@
             this.Panel13.Name = "Panel13";
             this.Panel13.Size = new System.Drawing.Size(563, 191);
             this.Panel13.TabIndex = 590;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.datalistado);
+            this.panel1.Location = new System.Drawing.Point(444, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 10);
+            this.panel1.TabIndex = 616;
             // 
             // datalistado
             // 
@@ -426,148 +718,6 @@
             this.si.Text = "SI";
             this.si.UseVisualStyleBackColor = true;
             this.si.CheckedChanged += new System.EventHandler(this.si_CheckedChanged);
-            // 
-            // Panel10
-            // 
-            this.Panel10.Controls.Add(this.txtidempresa);
-            this.Panel10.Controls.Add(this.lblvendesconimpuestos);
-            this.Panel10.Controls.Add(this.datalistado_empresas_nuevas);
-            this.Panel10.Controls.Add(this.txtcontadorcajas);
-            this.Panel10.Controls.Add(this.lblmododebusqueda);
-            this.Panel10.Controls.Add(this.TXTTRABAJASCONIMPUESTOS);
-            this.Panel10.Controls.Add(this.txtcontador_empresas);
-            this.Panel10.Controls.Add(this.lblIDSERIAL);
-            this.Panel10.Location = new System.Drawing.Point(21, 136);
-            this.Panel10.Name = "Panel10";
-            this.Panel10.Size = new System.Drawing.Size(10, 10);
-            this.Panel10.TabIndex = 563;
-            // 
-            // txtidempresa
-            // 
-            this.txtidempresa.AutoSize = true;
-            this.txtidempresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtidempresa.ForeColor = System.Drawing.Color.Black;
-            this.txtidempresa.Location = new System.Drawing.Point(94, 46);
-            this.txtidempresa.Name = "txtidempresa";
-            this.txtidempresa.Size = new System.Drawing.Size(92, 20);
-            this.txtidempresa.TabIndex = 556;
-            this.txtidempresa.Text = "idempresa";
-            // 
-            // lblvendesconimpuestos
-            // 
-            this.lblvendesconimpuestos.AutoSize = true;
-            this.lblvendesconimpuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblvendesconimpuestos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblvendesconimpuestos.Location = new System.Drawing.Point(31, 50);
-            this.lblvendesconimpuestos.Name = "lblvendesconimpuestos";
-            this.lblvendesconimpuestos.Size = new System.Drawing.Size(191, 20);
-            this.lblvendesconimpuestos.TabIndex = 342;
-            this.lblvendesconimpuestos.Text = "¿Vendes con Impuestos?";
-            // 
-            // datalistado_empresas_nuevas
-            // 
-            this.datalistado_empresas_nuevas.AllowUserToAddRows = false;
-            this.datalistado_empresas_nuevas.AllowUserToDeleteRows = false;
-            this.datalistado_empresas_nuevas.BackgroundColor = System.Drawing.Color.White;
-            this.datalistado_empresas_nuevas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistado_empresas_nuevas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.datalistado_empresas_nuevas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datalistado_empresas_nuevas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DataGridViewCheckBoxColumn2});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datalistado_empresas_nuevas.DefaultCellStyle = dataGridViewCellStyle11;
-            this.datalistado_empresas_nuevas.EnableHeadersVisualStyles = false;
-            this.datalistado_empresas_nuevas.Location = new System.Drawing.Point(91, 33);
-            this.datalistado_empresas_nuevas.Name = "datalistado_empresas_nuevas";
-            this.datalistado_empresas_nuevas.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistado_empresas_nuevas.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.datalistado_empresas_nuevas.RowHeadersVisible = false;
-            this.datalistado_empresas_nuevas.RowHeadersWidth = 5;
-            this.datalistado_empresas_nuevas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado_empresas_nuevas.Size = new System.Drawing.Size(155, 94);
-            this.datalistado_empresas_nuevas.TabIndex = 557;
-            // 
-            // DataGridViewCheckBoxColumn2
-            // 
-            this.DataGridViewCheckBoxColumn2.HeaderText = "Eliminar";
-            this.DataGridViewCheckBoxColumn2.Name = "DataGridViewCheckBoxColumn2";
-            this.DataGridViewCheckBoxColumn2.ReadOnly = true;
-            this.DataGridViewCheckBoxColumn2.Visible = false;
-            // 
-            // txtcontadorcajas
-            // 
-            this.txtcontadorcajas.AutoSize = true;
-            this.txtcontadorcajas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtcontadorcajas.ForeColor = System.Drawing.Color.Black;
-            this.txtcontadorcajas.Location = new System.Drawing.Point(38, 66);
-            this.txtcontadorcajas.Name = "txtcontadorcajas";
-            this.txtcontadorcajas.Size = new System.Drawing.Size(66, 20);
-            this.txtcontadorcajas.TabIndex = 556;
-            this.txtcontadorcajas.Text = "CAJAS";
-            // 
-            // lblmododebusqueda
-            // 
-            this.lblmododebusqueda.AutoSize = true;
-            this.lblmododebusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblmododebusqueda.ForeColor = System.Drawing.Color.Black;
-            this.lblmododebusqueda.Location = new System.Drawing.Point(79, 77);
-            this.lblmododebusqueda.Name = "lblmododebusqueda";
-            this.lblmododebusqueda.Size = new System.Drawing.Size(66, 20);
-            this.lblmododebusqueda.TabIndex = 556;
-            this.lblmododebusqueda.Text = "CAJAS";
-            // 
-            // TXTTRABAJASCONIMPUESTOS
-            // 
-            this.TXTTRABAJASCONIMPUESTOS.AutoSize = true;
-            this.TXTTRABAJASCONIMPUESTOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TXTTRABAJASCONIMPUESTOS.ForeColor = System.Drawing.Color.Black;
-            this.TXTTRABAJASCONIMPUESTOS.Location = new System.Drawing.Point(94, 62);
-            this.TXTTRABAJASCONIMPUESTOS.Name = "TXTTRABAJASCONIMPUESTOS";
-            this.TXTTRABAJASCONIMPUESTOS.Size = new System.Drawing.Size(23, 20);
-            this.TXTTRABAJASCONIMPUESTOS.TabIndex = 342;
-            this.TXTTRABAJASCONIMPUESTOS.Text = "%";
-            // 
-            // txtcontador_empresas
-            // 
-            this.txtcontador_empresas.AutoSize = true;
-            this.txtcontador_empresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtcontador_empresas.ForeColor = System.Drawing.Color.Black;
-            this.txtcontador_empresas.Location = new System.Drawing.Point(19, 33);
-            this.txtcontador_empresas.Name = "txtcontador_empresas";
-            this.txtcontador_empresas.Size = new System.Drawing.Size(66, 20);
-            this.txtcontador_empresas.TabIndex = 556;
-            this.txtcontador_empresas.Text = "CAJAS";
-            // 
-            // lblIDSERIAL
-            // 
-            this.lblIDSERIAL.AutoSize = true;
-            this.lblIDSERIAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblIDSERIAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblIDSERIAL.Location = new System.Drawing.Point(38, 7);
-            this.lblIDSERIAL.Name = "lblIDSERIAL";
-            this.lblIDSERIAL.Size = new System.Drawing.Size(111, 20);
-            this.lblIDSERIAL.TabIndex = 342;
-            this.lblIDSERIAL.Text = "lblIDSERIAL";
             // 
             // Panel6
             // 
@@ -736,49 +886,6 @@
             this.Label7.TabIndex = 342;
             this.Label7.Text = "Pais:";
             // 
-            // TabControl3
-            // 
-            this.TabControl3.Controls.Add(this.TabPage5);
-            this.TabControl3.Controls.Add(this.TabPage6);
-            this.TabControl3.Location = new System.Drawing.Point(132, 773);
-            this.TabControl3.Name = "TabControl3";
-            this.TabControl3.SelectedIndex = 0;
-            this.TabControl3.Size = new System.Drawing.Size(396, 95);
-            this.TabControl3.TabIndex = 350;
-            // 
-            // TabPage5
-            // 
-            this.TabPage5.Controls.Add(this.Label4);
-            this.TabPage5.Location = new System.Drawing.Point(4, 22);
-            this.TabPage5.Name = "TabPage5";
-            this.TabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage5.Size = new System.Drawing.Size(388, 69);
-            this.TabPage5.TabIndex = 0;
-            this.TabPage5.Text = "Registro sanitario de Ingreso";
-            this.TabPage5.UseVisualStyleBackColor = true;
-            // 
-            // Label4
-            // 
-            this.Label4.AutoSize = true;
-            this.Label4.ForeColor = System.Drawing.Color.Black;
-            this.Label4.Location = new System.Drawing.Point(12, 31);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(144, 13);
-            this.Label4.TabIndex = 341;
-            this.Label4.Text = "Registro sanitario de Ingreso:";
-            // 
-            // TabPage6
-            // 
-            this.TabPage6.Controls.Add(this.PictureBox4);
-            this.TabPage6.Controls.Add(this.Label17);
-            this.TabPage6.Location = new System.Drawing.Point(4, 22);
-            this.TabPage6.Name = "TabPage6";
-            this.TabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPage6.Size = new System.Drawing.Size(388, 69);
-            this.TabPage6.TabIndex = 1;
-            this.TabPage6.Text = "Ficha tecnica";
-            this.TabPage6.UseVisualStyleBackColor = true;
-            // 
             // PictureBox4
             // 
             this.PictureBox4.BackColor = System.Drawing.Color.White;
@@ -789,79 +896,6 @@
             this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox4.TabIndex = 346;
             this.PictureBox4.TabStop = false;
-            // 
-            // Label17
-            // 
-            this.Label17.AutoSize = true;
-            this.Label17.ForeColor = System.Drawing.Color.Black;
-            this.Label17.Location = new System.Drawing.Point(7, 25);
-            this.Label17.Name = "Label17";
-            this.Label17.Size = new System.Drawing.Size(74, 13);
-            this.Label17.TabIndex = 340;
-            this.Label17.Text = "Ficha tecnica:";
-            // 
-            // txtmsbox
-            // 
-            this.txtmsbox.BackColor = System.Drawing.Color.Transparent;
-            this.txtmsbox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmsbox.ForeColor = System.Drawing.Color.White;
-            this.txtmsbox.Location = new System.Drawing.Point(46, 440);
-            this.txtmsbox.Name = "txtmsbox";
-            this.txtmsbox.Size = new System.Drawing.Size(32, 10);
-            this.txtmsbox.TabIndex = 381;
-            this.txtmsbox.Text = "Listo";
-            this.txtmsbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtmsbox.Visible = false;
-            // 
-            // Panel15
-            // 
-            this.Panel15.BackColor = System.Drawing.Color.White;
-            this.Panel15.Controls.Add(this.MenuStrip1);
-            this.Panel15.Controls.Add(this.TSIGUIENTE_Y_GUARDAR);
-            this.Panel15.Location = new System.Drawing.Point(218, 479);
-            this.Panel15.Name = "Panel15";
-            this.Panel15.Size = new System.Drawing.Size(420, 63);
-            this.Panel15.TabIndex = 585;
-            // 
-            // MenuStrip1
-            // 
-            this.MenuStrip1.AutoSize = false;
-            this.MenuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem3});
-            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip1.Location = new System.Drawing.Point(318, 8);
-            this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.ShowItemToolTips = true;
-            this.MenuStrip1.Size = new System.Drawing.Size(92, 32);
-            this.MenuStrip1.TabIndex = 584;
-            this.MenuStrip1.Text = "MenuStrip1";
-            // 
-            // ToolStripMenuItem3
-            // 
-            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.Gainsboro;
-            this.ToolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
-            this.ToolStripMenuItem3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
-            this.ToolStripMenuItem3.Size = new System.Drawing.Size(79, 28);
-            this.ToolStripMenuItem3.Text = "Cancelar";
-            // 
-            // TSIGUIENTE_Y_GUARDAR
-            // 
-            this.TSIGUIENTE_Y_GUARDAR.AutoSize = false;
-            this.TSIGUIENTE_Y_GUARDAR.BackColor = System.Drawing.Color.Transparent;
-            this.TSIGUIENTE_Y_GUARDAR.Dock = System.Windows.Forms.DockStyle.None;
-            this.TSIGUIENTE_Y_GUARDAR.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSIGUIENTE_Y_GUARDAR_});
-            this.TSIGUIENTE_Y_GUARDAR.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.TSIGUIENTE_Y_GUARDAR.Location = new System.Drawing.Point(141, 8);
-            this.TSIGUIENTE_Y_GUARDAR.Name = "TSIGUIENTE_Y_GUARDAR";
-            this.TSIGUIENTE_Y_GUARDAR.ShowItemToolTips = true;
-            this.TSIGUIENTE_Y_GUARDAR.Size = new System.Drawing.Size(178, 32);
-            this.TSIGUIENTE_Y_GUARDAR.TabIndex = 583;
-            this.TSIGUIENTE_Y_GUARDAR.Text = "MenuStrip4";
             // 
             // TSIGUIENTE_Y_GUARDAR_
             // 
@@ -875,40 +909,6 @@
             this.TSIGUIENTE_Y_GUARDAR_.Size = new System.Drawing.Size(154, 28);
             this.TSIGUIENTE_Y_GUARDAR_.Text = "Guardar Cambios";
             this.TSIGUIENTE_Y_GUARDAR_.Click += new System.EventHandler(this.TSIGUIENTE_Y_GUARDAR__Click);
-            // 
-            // txtfecha
-            // 
-            this.txtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtfecha.Location = new System.Drawing.Point(242, 499);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(110, 20);
-            this.txtfecha.TabIndex = 600;
-            // 
-            // dlg
-            // 
-            this.dlg.FileName = "openFileDialog1";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.datalistado);
-            this.panel1.Location = new System.Drawing.Point(444, 23);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 10);
-            this.panel1.TabIndex = 616;
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(604, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 38);
-            this.button1.TabIndex = 600;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EMPRESA_CONFIG
             // 
@@ -930,29 +930,29 @@
             this.Panel8.PerformLayout();
             this.ToolStrip1.ResumeLayout(false);
             this.ToolStrip1.PerformLayout();
-            this.Panel13.ResumeLayout(false);
-            this.Panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
-            this.PanelImpuesto.ResumeLayout(false);
-            this.PanelImpuesto.PerformLayout();
             this.Panel10.ResumeLayout(false);
             this.Panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_empresas_nuevas)).EndInit();
-            this.Panel6.ResumeLayout(false);
-            this.Panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagenEmpresa)).EndInit();
             this.TabControl3.ResumeLayout(false);
             this.TabPage5.ResumeLayout(false);
             this.TabPage5.PerformLayout();
             this.TabPage6.ResumeLayout(false);
             this.TabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             this.Panel15.ResumeLayout(false);
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
             this.TSIGUIENTE_Y_GUARDAR.ResumeLayout(false);
             this.TSIGUIENTE_Y_GUARDAR.PerformLayout();
+            this.Panel13.ResumeLayout(false);
+            this.Panel13.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
+            this.PanelImpuesto.ResumeLayout(false);
+            this.PanelImpuesto.PerformLayout();
+            this.Panel6.ResumeLayout(false);
+            this.Panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,13 +1,14 @@
-﻿namespace Ada369Csharp
+﻿
+namespace Ada369Csharp.Presentacion.Configuraciones
 {
-    partial class usuariosok
+    partial class Usuariosconfig
     {
-        /// <summary>
+        /// <summary> 
         /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Limpiar los recursos que se estén usando.
         /// </summary>
         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
@@ -20,24 +21,40 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Código generado por el Diseñador de componentes
 
-        /// <summary>
+        /// <summary> 
         /// Método necesario para admitir el Diseñador. No se puede modificar
         /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usuariosok));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuariosconfig));
+            this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
+            this.LblAnuncioIcono = new System.Windows.Forms.Label();
+            this.ICONO = new System.Windows.Forms.PictureBox();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.txtrol = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtlogin = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblId_usuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.panelNuevo = new System.Windows.Forms.Panel();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.datalistado = new System.Windows.Forms.DataGridView();
-            this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btncerrar = new System.Windows.Forms.Button();
             this.panelRegistros = new System.Windows.Forms.Panel();
             this.panelICONO = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -53,36 +70,20 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.lblId_usuario = new System.Windows.Forms.Label();
             this.lblnumeroIcono = new System.Windows.Forms.Label();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.LblAnuncioIcono = new System.Windows.Forms.Label();
-            this.ICONO = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.btnGuardar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGuardarCambios = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtrol = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtcorreo = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtlogin = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
+            this.datalistado = new System.Windows.Forms.DataGridView();
+            this.panelNuevo = new System.Windows.Forms.Panel();
             this.dlg = new System.Windows.Forms.OpenFileDialog();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panelNuevo.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelRegistros.SuspendLayout();
             this.panelICONO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -98,74 +99,187 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).BeginInit();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
+            this.panelNuevo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // Eli
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(215)))), ((int)(((byte)(11)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(762, 47);
-            this.panel1.TabIndex = 0;
+            this.Eli.HeaderText = "";
+            this.Eli.Image = ((System.Drawing.Image)(resources.GetObject("Eli.Image")));
+            this.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Eli.Name = "Eli";
+            this.Eli.ReadOnly = true;
             // 
-            // button1
+            // LblAnuncioIcono
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(710, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 47);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.LblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LblAnuncioIcono.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LblAnuncioIcono.ForeColor = System.Drawing.Color.White;
+            this.LblAnuncioIcono.Location = new System.Drawing.Point(491, 29);
+            this.LblAnuncioIcono.Name = "LblAnuncioIcono";
+            this.LblAnuncioIcono.Size = new System.Drawing.Size(159, 144);
+            this.LblAnuncioIcono.TabIndex = 610;
+            this.LblAnuncioIcono.Text = "Elije un Icono";
+            this.LblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblAnuncioIcono.Click += new System.EventHandler(this.LblAnuncioIcono_Click);
             // 
-            // label1
+            // ICONO
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "USUARIOS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ICONO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ICONO.Location = new System.Drawing.Point(491, 29);
+            this.ICONO.Name = "ICONO";
+            this.ICONO.Size = new System.Drawing.Size(159, 144);
+            this.ICONO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ICONO.TabIndex = 611;
+            this.ICONO.TabStop = false;
             // 
-            // panel2
+            // Label7
             // 
-            this.panel2.Controls.Add(this.txtbuscar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 47);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(762, 47);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.Label7.AutoSize = true;
+            this.Label7.BackColor = System.Drawing.Color.White;
+            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.ForeColor = System.Drawing.Color.Gray;
+            this.Label7.Location = new System.Drawing.Point(186, 154);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(211, 15);
+            this.Label7.TabIndex = 614;
+            this.Label7.Text = "Servira para recuperar su Contraseña";
             // 
-            // txtbuscar
+            // txtrol
             // 
-            this.txtbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscar.Location = new System.Drawing.Point(55, 10);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(310, 26);
-            this.txtbuscar.TabIndex = 0;
-            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
+            this.txtrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtrol.FormattingEnabled = true;
+            this.txtrol.Items.AddRange(new object[] {
+            "Cajero (Si esta autorizado para manejar dinero)",
+            "Administrador (Control total)"});
+            this.txtrol.Location = new System.Drawing.Point(189, 199);
+            this.txtrol.Name = "txtrol";
+            this.txtrol.Size = new System.Drawing.Size(461, 28);
+            this.txtrol.TabIndex = 607;
             // 
-            // panelNuevo
+            // panel9
             // 
-            this.panelNuevo.Controls.Add(this.PictureBox2);
-            this.panelNuevo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelNuevo.Location = new System.Drawing.Point(548, 94);
-            this.panelNuevo.Name = "panelNuevo";
-            this.panelNuevo.Size = new System.Drawing.Size(214, 597);
-            this.panelNuevo.TabIndex = 2;
+            this.panel9.BackColor = System.Drawing.Color.Gray;
+            this.panel9.Location = new System.Drawing.Point(189, 150);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(237, 1);
+            this.panel9.TabIndex = 606;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Gray;
+            this.panel8.Location = new System.Drawing.Point(189, 116);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(237, 1);
+            this.panel8.TabIndex = 606;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Gray;
+            this.panel7.Location = new System.Drawing.Point(189, 82);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(237, 1);
+            this.panel7.TabIndex = 606;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Gray;
+            this.panel6.Location = new System.Drawing.Point(189, 43);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(237, 1);
+            this.panel6.TabIndex = 606;
+            // 
+            // txtcorreo
+            // 
+            this.txtcorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcorreo.Location = new System.Drawing.Point(189, 125);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(282, 19);
+            this.txtcorreo.TabIndex = 605;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Location = new System.Drawing.Point(189, 91);
+            this.txtPassword.MaxLength = 6;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(237, 19);
+            this.txtPassword.TabIndex = 605;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
+            // 
+            // txtlogin
+            // 
+            this.txtlogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtlogin.Location = new System.Drawing.Point(189, 57);
+            this.txtlogin.Name = "txtlogin";
+            this.txtlogin.Size = new System.Drawing.Size(237, 19);
+            this.txtlogin.TabIndex = 605;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtnombre.Location = new System.Drawing.Point(189, 18);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(237, 19);
+            this.txtnombre.TabIndex = 605;
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.BackColor = System.Drawing.Color.Transparent;
+            this.Label5.ForeColor = System.Drawing.Color.Black;
+            this.Label5.Location = new System.Drawing.Point(115, 56);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(68, 20);
+            this.Label5.TabIndex = 602;
+            this.Label5.Text = "Usuario:";
+            // 
+            // Label9
+            // 
+            this.Label9.AutoSize = true;
+            this.Label9.BackColor = System.Drawing.Color.Transparent;
+            this.Label9.Location = new System.Drawing.Point(146, 202);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(37, 20);
+            this.Label9.TabIndex = 601;
+            this.Label9.Text = "Rol:";
+            // 
+            // Label4
+            // 
+            this.Label4.AutoSize = true;
+            this.Label4.BackColor = System.Drawing.Color.Transparent;
+            this.Label4.ForeColor = System.Drawing.Color.Black;
+            this.Label4.Location = new System.Drawing.Point(87, 91);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(96, 20);
+            this.Label4.TabIndex = 603;
+            this.Label4.Text = "Contraseña:";
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.BackColor = System.Drawing.Color.White;
+            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.ForeColor = System.Drawing.Color.DimGray;
+            this.Label6.Location = new System.Drawing.Point(41, 124);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(142, 20);
+            this.Label6.TabIndex = 604;
+            this.Label6.Text = "Correo electronico:";
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.BackColor = System.Drawing.Color.Transparent;
+            this.Label8.ForeColor = System.Drawing.Color.Black;
+            this.Label8.Location = new System.Drawing.Point(27, 24);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(156, 20);
+            this.Label8.TabIndex = 600;
+            this.Label8.Text = "Nombres y Apellidos:";
             // 
             // PictureBox2
             // 
@@ -180,41 +294,76 @@
             this.PictureBox2.TabStop = false;
             this.PictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
-            // datalistado
+            // lblId_usuario
             // 
-            this.datalistado.AllowUserToAddRows = false;
-            this.datalistado.AllowUserToResizeRows = false;
-            this.datalistado.BackgroundColor = System.Drawing.Color.White;
-            this.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datalistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eli});
-            this.datalistado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datalistado.EnableHeadersVisualStyles = false;
-            this.datalistado.Location = new System.Drawing.Point(0, 94);
-            this.datalistado.Name = "datalistado";
-            this.datalistado.ReadOnly = true;
-            this.datalistado.RowHeadersVisible = false;
-            this.datalistado.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.datalistado.RowTemplate.Height = 30;
-            this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado.Size = new System.Drawing.Size(548, 597);
-            this.datalistado.TabIndex = 3;
-            this.datalistado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellClick);
-            this.datalistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentClick);
-            this.datalistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellDoubleClick);
+            this.lblId_usuario.AutoSize = true;
+            this.lblId_usuario.Location = new System.Drawing.Point(19, 49);
+            this.lblId_usuario.Name = "lblId_usuario";
+            this.lblId_usuario.Size = new System.Drawing.Size(51, 20);
+            this.lblId_usuario.TabIndex = 613;
+            this.lblId_usuario.Text = "label2";
             // 
-            // Eli
+            // panel2
             // 
-            this.Eli.HeaderText = "";
-            this.Eli.Image = ((System.Drawing.Image)(resources.GetObject("Eli.Image")));
-            this.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Eli.Name = "Eli";
-            this.Eli.ReadOnly = true;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.txtbuscar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 47);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(811, 47);
+            this.panel2.TabIndex = 6;
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbuscar.Location = new System.Drawing.Point(75, 11);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(310, 26);
+            this.txtbuscar.TabIndex = 616;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(215)))), ((int)(((byte)(11)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btncerrar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(811, 47);
+            this.panel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 47);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "USUARIOS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncerrar.BackgroundImage")));
+            this.btncerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btncerrar.FlatAppearance.BorderSize = 0;
+            this.btncerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrar.ForeColor = System.Drawing.Color.Black;
+            this.btncerrar.Location = new System.Drawing.Point(0, 0);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(5);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(52, 47);
+            this.btncerrar.TabIndex = 618;
+            this.btncerrar.UseVisualStyleBackColor = true;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click_1);
             // 
             // panelRegistros
             // 
@@ -222,11 +371,10 @@
             this.panelRegistros.Controls.Add(this.panelICONO);
             this.panelRegistros.Controls.Add(this.panel5);
             this.panelRegistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelRegistros.Location = new System.Drawing.Point(12, 113);
+            this.panelRegistros.Location = new System.Drawing.Point(33, 117);
             this.panelRegistros.Name = "panelRegistros";
-            this.panelRegistros.Size = new System.Drawing.Size(637, 578);
-            this.panelRegistros.TabIndex = 4;
-            this.panelRegistros.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panelRegistros.Size = new System.Drawing.Size(676, 506);
+            this.panelRegistros.TabIndex = 9;
             // 
             // panelICONO
             // 
@@ -234,9 +382,9 @@
             this.panelICONO.Controls.Add(this.pictureBox11);
             this.panelICONO.Controls.Add(this.flowLayoutPanel2);
             this.panelICONO.Controls.Add(this.flowLayoutPanel1);
-            this.panelICONO.Location = new System.Drawing.Point(537, 83);
+            this.panelICONO.Location = new System.Drawing.Point(536, 109);
             this.panelICONO.Name = "panelICONO";
-            this.panelICONO.Size = new System.Drawing.Size(122, 460);
+            this.panelICONO.Size = new System.Drawing.Size(207, 465);
             this.panelICONO.TabIndex = 606;
             this.panelICONO.Visible = false;
             // 
@@ -262,7 +410,6 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(648, 148);
             this.flowLayoutPanel2.TabIndex = 0;
-            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // pictureBox7
             // 
@@ -389,7 +536,7 @@
             this.panel5.Controls.Add(this.Label4);
             this.panel5.Controls.Add(this.Label6);
             this.panel5.Controls.Add(this.Label8);
-            this.panel5.Location = new System.Drawing.Point(22, 17);
+            this.panel5.Location = new System.Drawing.Point(12, 25);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(685, 362);
             this.panel5.TabIndex = 605;
@@ -403,15 +550,6 @@
             this.panel10.Size = new System.Drawing.Size(10, 10);
             this.panel10.TabIndex = 615;
             // 
-            // lblId_usuario
-            // 
-            this.lblId_usuario.AutoSize = true;
-            this.lblId_usuario.Location = new System.Drawing.Point(19, 49);
-            this.lblId_usuario.Name = "lblId_usuario";
-            this.lblId_usuario.Size = new System.Drawing.Size(51, 20);
-            this.lblId_usuario.TabIndex = 613;
-            this.lblId_usuario.Text = "label2";
-            // 
             // lblnumeroIcono
             // 
             this.lblnumeroIcono.AutoSize = true;
@@ -420,42 +558,6 @@
             this.lblnumeroIcono.Size = new System.Drawing.Size(51, 20);
             this.lblnumeroIcono.TabIndex = 612;
             this.lblnumeroIcono.Text = "label2";
-            // 
-            // Label7
-            // 
-            this.Label7.AutoSize = true;
-            this.Label7.BackColor = System.Drawing.Color.White;
-            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.ForeColor = System.Drawing.Color.Gray;
-            this.Label7.Location = new System.Drawing.Point(186, 154);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(211, 15);
-            this.Label7.TabIndex = 614;
-            this.Label7.Text = "Servira para recuperar su Contraseña";
-            // 
-            // LblAnuncioIcono
-            // 
-            this.LblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LblAnuncioIcono.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LblAnuncioIcono.ForeColor = System.Drawing.Color.White;
-            this.LblAnuncioIcono.Location = new System.Drawing.Point(491, 29);
-            this.LblAnuncioIcono.Name = "LblAnuncioIcono";
-            this.LblAnuncioIcono.Size = new System.Drawing.Size(159, 144);
-            this.LblAnuncioIcono.TabIndex = 610;
-            this.LblAnuncioIcono.Text = "Elije un Icono";
-            this.LblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblAnuncioIcono.Click += new System.EventHandler(this.LblAnuncioIcono_Click);
-            // 
-            // ICONO
-            // 
-            this.ICONO.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ICONO.Location = new System.Drawing.Point(491, 29);
-            this.ICONO.Name = "ICONO";
-            this.ICONO.Size = new System.Drawing.Size(159, 144);
-            this.ICONO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ICONO.TabIndex = 611;
-            this.ICONO.TabStop = false;
-            this.ICONO.Click += new System.EventHandler(this.ICONO_Click);
             // 
             // btnVolver
             // 
@@ -502,139 +604,42 @@
             this.btnGuardarCambios.Text = "Guardar Cambios";
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
-            // txtrol
+            // datalistado
             // 
-            this.txtrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtrol.FormattingEnabled = true;
-            this.txtrol.Items.AddRange(new object[] {
-            "Cajero (Si esta autorizado para manejar dinero)",
-            "Administrador (Control total)"});
-            this.txtrol.Location = new System.Drawing.Point(189, 199);
-            this.txtrol.Name = "txtrol";
-            this.txtrol.Size = new System.Drawing.Size(461, 28);
-            this.txtrol.TabIndex = 607;
-            this.txtrol.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.datalistado.AllowUserToAddRows = false;
+            this.datalistado.AllowUserToResizeRows = false;
+            this.datalistado.BackgroundColor = System.Drawing.Color.White;
+            this.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eli});
+            this.datalistado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datalistado.EnableHeadersVisualStyles = false;
+            this.datalistado.Location = new System.Drawing.Point(0, 94);
+            this.datalistado.Name = "datalistado";
+            this.datalistado.ReadOnly = true;
+            this.datalistado.RowHeadersVisible = false;
+            this.datalistado.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistado.RowTemplate.Height = 30;
+            this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datalistado.Size = new System.Drawing.Size(597, 468);
+            this.datalistado.TabIndex = 8;
+            this.datalistado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellClick);
+            this.datalistado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentDoubleClick);
             // 
-            // panel9
+            // panelNuevo
             // 
-            this.panel9.BackColor = System.Drawing.Color.Gray;
-            this.panel9.Location = new System.Drawing.Point(189, 150);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(237, 1);
-            this.panel9.TabIndex = 606;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Gray;
-            this.panel8.Location = new System.Drawing.Point(189, 116);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(237, 1);
-            this.panel8.TabIndex = 606;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Location = new System.Drawing.Point(189, 82);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(237, 1);
-            this.panel7.TabIndex = 606;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Location = new System.Drawing.Point(189, 43);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(237, 1);
-            this.panel6.TabIndex = 606;
-            // 
-            // txtcorreo
-            // 
-            this.txtcorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcorreo.Location = new System.Drawing.Point(189, 125);
-            this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(282, 19);
-            this.txtcorreo.TabIndex = 605;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Location = new System.Drawing.Point(189, 91);
-            this.txtPassword.MaxLength = 6;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(237, 19);
-            this.txtPassword.TabIndex = 605;
-            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
-            // 
-            // txtlogin
-            // 
-            this.txtlogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtlogin.Location = new System.Drawing.Point(189, 57);
-            this.txtlogin.Name = "txtlogin";
-            this.txtlogin.Size = new System.Drawing.Size(237, 19);
-            this.txtlogin.TabIndex = 605;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnombre.Location = new System.Drawing.Point(189, 18);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(237, 19);
-            this.txtnombre.TabIndex = 605;
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.BackColor = System.Drawing.Color.Transparent;
-            this.Label5.ForeColor = System.Drawing.Color.Black;
-            this.Label5.Location = new System.Drawing.Point(115, 56);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(68, 20);
-            this.Label5.TabIndex = 602;
-            this.Label5.Text = "Usuario:";
-            // 
-            // Label9
-            // 
-            this.Label9.AutoSize = true;
-            this.Label9.BackColor = System.Drawing.Color.Transparent;
-            this.Label9.Location = new System.Drawing.Point(146, 202);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(37, 20);
-            this.Label9.TabIndex = 601;
-            this.Label9.Text = "Rol:";
-            // 
-            // Label4
-            // 
-            this.Label4.AutoSize = true;
-            this.Label4.BackColor = System.Drawing.Color.Transparent;
-            this.Label4.ForeColor = System.Drawing.Color.Black;
-            this.Label4.Location = new System.Drawing.Point(87, 91);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(96, 20);
-            this.Label4.TabIndex = 603;
-            this.Label4.Text = "Contraseña:";
-            // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.BackColor = System.Drawing.Color.White;
-            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.ForeColor = System.Drawing.Color.DimGray;
-            this.Label6.Location = new System.Drawing.Point(41, 124);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(142, 20);
-            this.Label6.TabIndex = 604;
-            this.Label6.Text = "Correo electronico:";
-            // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.BackColor = System.Drawing.Color.Transparent;
-            this.Label8.ForeColor = System.Drawing.Color.Black;
-            this.Label8.Location = new System.Drawing.Point(27, 24);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(156, 20);
-            this.Label8.TabIndex = 600;
-            this.Label8.Text = "Nombres y Apellidos:";
+            this.panelNuevo.BackColor = System.Drawing.Color.White;
+            this.panelNuevo.Controls.Add(this.PictureBox2);
+            this.panelNuevo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNuevo.Location = new System.Drawing.Point(597, 94);
+            this.panelNuevo.Name = "panelNuevo";
+            this.panelNuevo.Size = new System.Drawing.Size(214, 468);
+            this.panelNuevo.TabIndex = 7;
             // 
             // dlg
             // 
@@ -647,28 +652,33 @@
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
-            // usuariosok
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(35, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 617;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Usuariosconfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(762, 691);
             this.Controls.Add(this.panelRegistros);
             this.Controls.Add(this.datalistado);
             this.Controls.Add(this.panelNuevo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "usuariosok";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.usuariosok_Load);
-            this.panel1.ResumeLayout(false);
+            this.Name = "Usuariosconfig";
+            this.Size = new System.Drawing.Size(811, 562);
+            this.Load += new System.EventHandler(this.Usuariosconfig_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelNuevo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.panelRegistros.ResumeLayout(false);
             this.panelICONO.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -686,24 +696,21 @@
             this.panel5.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
+            this.panelNuevo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtbuscar;
-        private System.Windows.Forms.Panel panelNuevo;
-        internal System.Windows.Forms.PictureBox PictureBox2;
-        private System.Windows.Forms.DataGridView datalistado;
-        private System.Windows.Forms.Panel panelRegistros;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.DataGridViewImageColumn Eli;
+        private System.Windows.Forms.Label LblAnuncioIcono;
+        private System.Windows.Forms.PictureBox ICONO;
+        internal System.Windows.Forms.Label Label7;
         private System.Windows.Forms.ComboBox txtrol;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
@@ -718,12 +725,12 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label8;
-        private System.Windows.Forms.Label LblAnuncioIcono;
-        private System.Windows.Forms.PictureBox ICONO;
-        private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem btnGuardar;
-        private System.Windows.Forms.ToolStripMenuItem btnGuardarCambios;
+        internal System.Windows.Forms.PictureBox PictureBox2;
+        private System.Windows.Forms.Label lblId_usuario;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelRegistros;
         private System.Windows.Forms.Panel panelICONO;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -736,14 +743,19 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label lblnumeroIcono;
-        private System.Windows.Forms.DataGridViewImageColumn Eli;
-        private System.Windows.Forms.Label lblId_usuario;
-        internal System.Windows.Forms.Label Label7;
-        private System.Windows.Forms.OpenFileDialog dlg;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label lblnumeroIcono;
+        private System.Windows.Forms.DataGridView datalistado;
+        private System.Windows.Forms.Panel panelNuevo;
+        private System.Windows.Forms.OpenFileDialog dlg;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem btnGuardar;
+        private System.Windows.Forms.ToolStripMenuItem btnGuardarCambios;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btncerrar;
+        private System.Windows.Forms.TextBox txtbuscar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
-

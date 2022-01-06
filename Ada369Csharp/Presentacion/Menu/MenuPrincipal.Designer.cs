@@ -30,20 +30,39 @@ namespace Ada369Csharp.Presentacion.Menu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
+            this.panelbotones = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelVisor = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnLicencia = new System.Windows.Forms.Button();
             this.PanelLicencia = new System.Windows.Forms.Panel();
             this.lblestadoLicencia = new System.Windows.Forms.Label();
+            this.Label66 = new System.Windows.Forms.Label();
             this.PictureBox16 = new System.Windows.Forms.PictureBox();
             this.PictureBox9 = new System.Windows.Forms.PictureBox();
-            this.Label66 = new System.Windows.Forms.Label();
-            this.panelbotones = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelVisor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel13.SuspendLayout();
             this.PanelLicencia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelbotones
+            // 
+            this.panelbotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.panelbotones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelbotones.Location = new System.Drawing.Point(0, 138);
+            this.panelbotones.Name = "panelbotones";
+            this.panelbotones.Size = new System.Drawing.Size(217, 288);
+            this.panelbotones.TabIndex = 2;
+            // 
+            // panelVisor
+            // 
+            this.panelVisor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panelVisor.Location = new System.Drawing.Point(214, 0);
+            this.panelVisor.Name = "panelVisor";
+            this.panelVisor.Size = new System.Drawing.Size(1005, 616);
+            this.panelVisor.TabIndex = 5;
             // 
             // panel13
             // 
@@ -52,9 +71,10 @@ namespace Ada369Csharp.Presentacion.Menu
             this.panel13.Controls.Add(this.PanelLicencia);
             this.panel13.Controls.Add(this.PictureBox9);
             this.panel13.Controls.Add(this.Label66);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(200, 138);
+            this.panel13.Size = new System.Drawing.Size(217, 138);
             this.panel13.TabIndex = 632;
             // 
             // btnLicencia
@@ -74,6 +94,7 @@ namespace Ada369Csharp.Presentacion.Menu
             this.btnLicencia.Text = "Activar Licencia";
             this.btnLicencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLicencia.UseVisualStyleBackColor = false;
+            this.btnLicencia.Click += new System.EventHandler(this.btnLicencia_Click);
             // 
             // PanelLicencia
             // 
@@ -96,6 +117,18 @@ namespace Ada369Csharp.Presentacion.Menu
             this.lblestadoLicencia.TabIndex = 603;
             this.lblestadoLicencia.Text = "Licencia de prueba activada hasta el 02 agosto 2023";
             this.lblestadoLicencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Label66
+            // 
+            this.Label66.AutoSize = true;
+            this.Label66.BackColor = System.Drawing.Color.Transparent;
+            this.Label66.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
+            this.Label66.ForeColor = System.Drawing.Color.White;
+            this.Label66.Location = new System.Drawing.Point(64, 24);
+            this.Label66.Name = "Label66";
+            this.Label66.Size = new System.Drawing.Size(144, 19);
+            this.Label66.TabIndex = 600;
+            this.Label66.Text = "NexusDBPOS V2.0";
             // 
             // PictureBox16
             // 
@@ -120,56 +153,41 @@ namespace Ada369Csharp.Presentacion.Menu
             this.PictureBox9.TabIndex = 607;
             this.PictureBox9.TabStop = false;
             // 
-            // Label66
+            // panel1
             // 
-            this.Label66.AutoSize = true;
-            this.Label66.BackColor = System.Drawing.Color.Transparent;
-            this.Label66.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
-            this.Label66.ForeColor = System.Drawing.Color.White;
-            this.Label66.Location = new System.Drawing.Point(64, 24);
-            this.Label66.Name = "Label66";
-            this.Label66.Size = new System.Drawing.Size(117, 19);
-            this.Label66.TabIndex = 600;
-            this.Label66.Text = "NexusDB V1.0";
-            // 
-            // panelbotones
-            // 
-            this.panelbotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panelbotones.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelbotones.Location = new System.Drawing.Point(0, 0);
-            this.panelbotones.Name = "panelbotones";
-            this.panelbotones.Size = new System.Drawing.Size(200, 587);
-            this.panelbotones.TabIndex = 633;
-            // 
-            // panelVisor
-            // 
-            this.panelVisor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.panelVisor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVisor.Location = new System.Drawing.Point(0, 0);
-            this.panelVisor.Name = "panelVisor";
-            this.panelVisor.Size = new System.Drawing.Size(861, 587);
-            this.panelVisor.TabIndex = 634;
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.panel1.Controls.Add(this.panelbotones);
+            this.panel1.Controls.Add(this.panel13);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(217, 426);
+            this.panel1.TabIndex = 6;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panelbotones);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelVisor);
             this.Name = "MenuPrincipal";
-            this.Size = new System.Drawing.Size(861, 587);
+            this.Size = new System.Drawing.Size(1003, 426);
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.PanelLicencia.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.FlowLayoutPanel panelbotones;
+        private System.Windows.Forms.Panel panelVisor;
         private System.Windows.Forms.Panel panel13;
         internal System.Windows.Forms.Button btnLicencia;
         internal System.Windows.Forms.Panel PanelLicencia;
@@ -177,7 +195,6 @@ namespace Ada369Csharp.Presentacion.Menu
         internal System.Windows.Forms.PictureBox PictureBox16;
         internal System.Windows.Forms.PictureBox PictureBox9;
         public System.Windows.Forms.Label Label66;
-        private System.Windows.Forms.FlowLayoutPanel panelbotones;
-        private System.Windows.Forms.Panel panelVisor;
+        public System.Windows.Forms.Panel panel1;
     }
 }

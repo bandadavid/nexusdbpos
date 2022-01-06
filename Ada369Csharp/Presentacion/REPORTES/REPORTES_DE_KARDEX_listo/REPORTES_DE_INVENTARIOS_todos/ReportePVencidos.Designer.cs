@@ -134,7 +134,7 @@ namespace Ada369Csharp.Presentacion.REPORTES.REPORTES_DE_KARDEX_listo.REPORTES_D
             this.TextBox18.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(7D);
             this.TextBox18.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
             this.TextBox18.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox18.Value = "Reporte generado por Ada369";
+            this.TextBox18.Value = "Reporte generado por NexusDBPOS";
             // 
             // reportHeaderSection1
             // 

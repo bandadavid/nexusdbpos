@@ -16,6 +16,7 @@ using System.Xml;
 using Ada369Csharp.Logica;
 using Ada369Csharp.CONEXION;
 using Ada369Csharp.Datos;
+using Ada369Csharp.Presentacion.Menu;
 
 namespace Ada369Csharp.Presentacion
 
@@ -745,12 +746,16 @@ namespace Ada369Csharp.Presentacion
                 timerValidarRol.Stop();            
                 if (lblRol  == administrador )
                 {
-                
+
                     editar_inicio_De_sesion();
                     Dispose();
                     Admin_nivel_dios.DASHBOARD_PRINCIPAL  frm = new Admin_nivel_dios.DASHBOARD_PRINCIPAL();
                     frm.ShowDialog();
-                    
+                    /*var ctl = new MenuPrincipal();
+                    ctl.Dock = DockStyle.Fill;
+                    this.Controls.Add(ctl);
+                    ctl.BringToFront();*/
+
                 }
                 else
                 { 
