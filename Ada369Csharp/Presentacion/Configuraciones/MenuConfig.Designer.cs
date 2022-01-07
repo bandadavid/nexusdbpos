@@ -542,6 +542,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label7.TabIndex = 3;
             this.Label7.Text = "Clientes";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // Panel11
             // 
@@ -564,6 +565,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label8.TabIndex = 3;
             this.Label8.Text = "Proveedores";
             this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // Label1
             // 
@@ -733,6 +735,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Button8.Size = new System.Drawing.Size(81, 51);
             this.Button8.TabIndex = 5;
             this.Button8.UseVisualStyleBackColor = true;
+            this.Button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // btnproveedores
             // 
@@ -747,6 +750,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btnproveedores.Size = new System.Drawing.Size(98, 51);
             this.btnproveedores.TabIndex = 5;
             this.btnproveedores.UseVisualStyleBackColor = true;
+            this.btnproveedores.Click += new System.EventHandler(this.btnproveedores_Click);
             // 
             // MenuConfig
             // 

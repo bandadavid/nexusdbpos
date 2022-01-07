@@ -105,5 +105,41 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             Controls.Add(ctl);
             ctl.BringToFront();
         }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            var ctl = new Clientesconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+            var ctl = new Clientesconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void btnproveedores_Click(object sender, EventArgs e)
+        {
+            var ctl = new Proveedoresconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label8_Click(object sender, EventArgs e)
+        {
+            var ctl = new Proveedoresconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
     }
 }

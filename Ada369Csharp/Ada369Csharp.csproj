@@ -269,6 +269,12 @@
     <Compile Include="Presentacion\Configuraciones\Cajasconfig.Designer.cs">
       <DependentUpon>Cajasconfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Configuraciones\Clientesconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Clientesconfig.Designer.cs">
+      <DependentUpon>Clientesconfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Configuraciones\Empresaconfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -286,6 +292,12 @@
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Productosconfig.Designer.cs">
       <DependentUpon>Productosconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Proveedoresconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Proveedoresconfig.Designer.cs">
+      <DependentUpon>Proveedoresconfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Serializacionconfig.cs">
       <SubType>UserControl</SubType>
@@ -628,6 +640,9 @@
     <EmbeddedResource Include="Presentacion\Configuraciones\Cajasconfig.resx">
       <DependentUpon>Cajasconfig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Clientesconfig.resx">
+      <DependentUpon>Clientesconfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Empresaconfig.resx">
       <DependentUpon>Empresaconfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -636,6 +651,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Productosconfig.resx">
       <DependentUpon>Productosconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Proveedoresconfig.resx">
+      <DependentUpon>Proveedoresconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Serializacionconfig.resx">
       <DependentUpon>Serializacionconfig.cs</DependentUpon>
