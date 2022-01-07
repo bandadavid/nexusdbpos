@@ -80,7 +80,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(958, 62);
+            this.panel1.Size = new System.Drawing.Size(957, 62);
             this.panel1.TabIndex = 0;
             // 
             // Label3
@@ -91,7 +91,7 @@
             this.Label3.ForeColor = System.Drawing.Color.Black;
             this.Label3.Location = new System.Drawing.Point(0, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(958, 59);
+            this.Label3.Size = new System.Drawing.Size(957, 59);
             this.Label3.TabIndex = 547;
             this.Label3.Text = "SERIALIZACION DE COMPROBANTES";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +101,7 @@
             this.panel2.Controls.Add(this.PictureBox1);
             this.panel2.Controls.Add(this.PictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(832, 62);
+            this.panel2.Location = new System.Drawing.Point(831, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(126, 506);
             this.panel2.TabIndex = 1;
@@ -184,7 +184,7 @@
             this.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistado.RowTemplate.Height = 60;
             this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado.Size = new System.Drawing.Size(832, 506);
+            this.datalistado.Size = new System.Drawing.Size(831, 506);
             this.datalistado.TabIndex = 367;
             this.datalistado.DoubleClick += new System.EventHandler(this.datalistado_DoubleClick);
             // 
@@ -439,7 +439,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(958, 568);
+            this.ClientSize = new System.Drawing.Size(957, 568);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.datalistado);
             this.Controls.Add(this.panel2);

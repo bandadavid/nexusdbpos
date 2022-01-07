@@ -51,5 +51,59 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             Controls.Add(ctl);
             ctl.BringToFront();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            var ctl = new Cajasconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label27_Click(object sender, EventArgs e)
+        {
+            var ctl = new Cajasconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            var ctl = new Serializacionconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label29_Click(object sender, EventArgs e)
+        {
+            var ctl = new Serializacionconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            var ctl = new Productosconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+            var ctl = new Productosconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
     }
 }

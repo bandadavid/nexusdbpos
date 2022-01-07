@@ -462,6 +462,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label27.TabIndex = 3;
             this.Label27.Text = "Cajas";
             this.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label27.Click += new System.EventHandler(this.Label27_Click);
             // 
             // Panel37
             // 
@@ -485,6 +486,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label29.TabIndex = 3;
             this.Label29.Text = "Serializacion";
             this.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label29.Click += new System.EventHandler(this.Label29_Click);
             // 
             // LBLEstado_correo
             // 
@@ -516,6 +518,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label3.TabIndex = 3;
             this.Label3.Text = "Productos";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // Panel10
             // 
@@ -685,6 +688,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Button3.Size = new System.Drawing.Size(81, 51);
             this.Button3.TabIndex = 5;
             this.Button3.UseVisualStyleBackColor = true;
+            this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Button4
             // 
@@ -699,6 +703,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Button4.Size = new System.Drawing.Size(96, 51);
             this.Button4.TabIndex = 5;
             this.Button4.UseVisualStyleBackColor = true;
+            this.Button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Button6
             // 
@@ -713,6 +718,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Button6.Size = new System.Drawing.Size(81, 51);
             this.Button6.TabIndex = 5;
             this.Button6.UseVisualStyleBackColor = true;
+            this.Button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // Button8
             // 

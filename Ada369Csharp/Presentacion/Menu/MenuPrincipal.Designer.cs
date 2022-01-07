@@ -36,9 +36,9 @@ namespace Ada369Csharp.Presentacion.Menu
             this.btnLicencia = new System.Windows.Forms.Button();
             this.PanelLicencia = new System.Windows.Forms.Panel();
             this.lblestadoLicencia = new System.Windows.Forms.Label();
-            this.Label66 = new System.Windows.Forms.Label();
             this.PictureBox16 = new System.Windows.Forms.PictureBox();
             this.PictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Label66 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel13.SuspendLayout();
             this.PanelLicencia.SuspendLayout();
@@ -53,15 +53,15 @@ namespace Ada369Csharp.Presentacion.Menu
             this.panelbotones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelbotones.Location = new System.Drawing.Point(0, 138);
             this.panelbotones.Name = "panelbotones";
-            this.panelbotones.Size = new System.Drawing.Size(217, 288);
+            this.panelbotones.Size = new System.Drawing.Size(217, 565);
             this.panelbotones.TabIndex = 2;
             // 
             // panelVisor
             // 
-            this.panelVisor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panelVisor.BackColor = System.Drawing.Color.White;
             this.panelVisor.Location = new System.Drawing.Point(214, 0);
             this.panelVisor.Name = "panelVisor";
-            this.panelVisor.Size = new System.Drawing.Size(1005, 616);
+            this.panelVisor.Size = new System.Drawing.Size(1073, 703);
             this.panelVisor.TabIndex = 5;
             // 
             // panel13
@@ -118,18 +118,6 @@ namespace Ada369Csharp.Presentacion.Menu
             this.lblestadoLicencia.Text = "Licencia de prueba activada hasta el 02 agosto 2023";
             this.lblestadoLicencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Label66
-            // 
-            this.Label66.AutoSize = true;
-            this.Label66.BackColor = System.Drawing.Color.Transparent;
-            this.Label66.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
-            this.Label66.ForeColor = System.Drawing.Color.White;
-            this.Label66.Location = new System.Drawing.Point(64, 24);
-            this.Label66.Name = "Label66";
-            this.Label66.Size = new System.Drawing.Size(144, 19);
-            this.Label66.TabIndex = 600;
-            this.Label66.Text = "NexusDBPOS V2.0";
-            // 
             // PictureBox16
             // 
             this.PictureBox16.Dock = System.Windows.Forms.DockStyle.Left;
@@ -153,6 +141,18 @@ namespace Ada369Csharp.Presentacion.Menu
             this.PictureBox9.TabIndex = 607;
             this.PictureBox9.TabStop = false;
             // 
+            // Label66
+            // 
+            this.Label66.AutoSize = true;
+            this.Label66.BackColor = System.Drawing.Color.Transparent;
+            this.Label66.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
+            this.Label66.ForeColor = System.Drawing.Color.White;
+            this.Label66.Location = new System.Drawing.Point(64, 24);
+            this.Label66.Name = "Label66";
+            this.Label66.Size = new System.Drawing.Size(144, 19);
+            this.Label66.TabIndex = 600;
+            this.Label66.Text = "NexusDBPOS V2.0";
+            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -162,17 +162,18 @@ namespace Ada369Csharp.Presentacion.Menu
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 426);
+            this.panel1.Size = new System.Drawing.Size(217, 703);
             this.panel1.TabIndex = 6;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelVisor);
             this.Name = "MenuPrincipal";
-            this.Size = new System.Drawing.Size(1003, 426);
+            this.Size = new System.Drawing.Size(1287, 703);
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();

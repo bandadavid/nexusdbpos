@@ -263,6 +263,12 @@
     <Compile Include="Presentacion\Conexion_remota\Conexion_secundaria.Designer.cs">
       <DependentUpon>Conexion_secundaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Configuraciones\Cajasconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Cajasconfig.Designer.cs">
+      <DependentUpon>Cajasconfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Configuraciones\Empresaconfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -274,6 +280,18 @@
     </Compile>
     <Compile Include="Presentacion\Configuraciones\MenuConfig.Designer.cs">
       <DependentUpon>MenuConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Productosconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Productosconfig.Designer.cs">
+      <DependentUpon>Productosconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Serializacionconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Serializacionconfig.Designer.cs">
+      <DependentUpon>Serializacionconfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Usuariosconfig.cs">
       <SubType>UserControl</SubType>
@@ -607,11 +625,20 @@
     <EmbeddedResource Include="Presentacion\Conexion_remota\Conexion_secundaria.resx">
       <DependentUpon>Conexion_secundaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Cajasconfig.resx">
+      <DependentUpon>Cajasconfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Empresaconfig.resx">
       <DependentUpon>Empresaconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\MenuConfig.resx">
       <DependentUpon>MenuConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Productosconfig.resx">
+      <DependentUpon>Productosconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Serializacionconfig.resx">
+      <DependentUpon>Serializacionconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Usuariosconfig.resx">
       <DependentUpon>Usuariosconfig.cs</DependentUpon>
@@ -753,6 +780,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="ada369m.manifest" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">

@@ -88,7 +88,7 @@ namespace Ada369Csharp.Presentacion.SERIALIZACION_DE_COMPROBANTES
                 datalistado.Columns[5].Width = 220;
                 datalistado.Columns[6].Width  = 520;
                 Bases.Multilinea(ref datalistado);
-
+                panel2.Visible = true;
 
             }
             catch (Exception ex)
@@ -220,6 +220,11 @@ namespace Ada369Csharp.Presentacion.SERIALIZACION_DE_COMPROBANTES
         private void VOLVEROK_Click(object sender, EventArgs e)
         {
             panel3.Visible = false;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

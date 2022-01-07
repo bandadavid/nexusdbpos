@@ -943,7 +943,7 @@ namespace Ada369Csharp.Presentacion.PRODUCTOS_OK
             try
             {
                 con.Open();
-                resultado = Convert.ToDouble(comMoneda.ExecuteScalar()) + 1; 
+                resultado = Convert.ToDouble(comMoneda.ExecuteScalar()) + 1;
                 con.Close();
             }
             catch (Exception ex)
@@ -953,11 +953,11 @@ namespace Ada369Csharp.Presentacion.PRODUCTOS_OK
 
             string Cadena = txtgrupo.Text;
             string[] Palabra;
-            String espacio=" ";
+            String espacio = " ";
             Palabra = Cadena.Split(Convert.ToChar(espacio));
             try
             {
-    
+
                 txtcodigodebarras.Text = resultado + Palabra[0].Substring(0, 2) + 369;
             }
             catch (Exception ex)
@@ -1463,6 +1463,11 @@ namespace Ada369Csharp.Presentacion.PRODUCTOS_OK
         private void txtstockminimo_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             Bases.Separador_de_Numeros(txtstockminimo, e);
+
+        }
+
+        private void Tmensajes_Popup(object sender, PopupEventArgs e)
+        {
 
         }
     }

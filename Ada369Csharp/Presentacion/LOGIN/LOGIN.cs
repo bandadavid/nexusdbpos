@@ -747,14 +747,14 @@ namespace Ada369Csharp.Presentacion
                 if (lblRol  == administrador )
                 {
 
-                    editar_inicio_De_sesion();
+                    /*editar_inicio_De_sesion();
                     Dispose();
                     Admin_nivel_dios.DASHBOARD_PRINCIPAL  frm = new Admin_nivel_dios.DASHBOARD_PRINCIPAL();
-                    frm.ShowDialog();
-                    /*var ctl = new MenuPrincipal();
+                    frm.ShowDialog();*/
+                    var ctl = new MenuPrincipal();
                     ctl.Dock = DockStyle.Fill;
                     this.Controls.Add(ctl);
-                    ctl.BringToFront();*/
+                    ctl.BringToFront();
 
                 }
                 else
