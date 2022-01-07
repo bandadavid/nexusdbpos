@@ -1,16 +1,17 @@
-﻿namespace Ada369Csharp.Presentacion.CorreoBase
+﻿
+namespace Ada369Csharp.Presentacion.Configuraciones
 {
-    partial class ConfigurarCorreo
+    partial class Correoconfig
     {
-        /// <summary>
-        /// Required designer variable.
+        /// <summary> 
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
+        /// <summary> 
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,68 +21,65 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de componentes
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// <summary> 
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigurarCorreo));
-            this.Panel1 = new System.Windows.Forms.Panel();
-            this.Panel4 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Correoconfig));
+            this.PictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Label5 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.MenuStrip15 = new System.Windows.Forms.MenuStrip();
             this.tver = new System.Windows.Forms.ToolStripMenuItem();
             this.tocultar = new System.Windows.Forms.ToolStripMenuItem();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Panel6 = new System.Windows.Forms.Panel();
+            this.Label7 = new System.Windows.Forms.Label();
             this.Panel5 = new System.Windows.Forms.Panel();
             this.Panel7 = new System.Windows.Forms.Panel();
             this.TXTCORREO = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnsincronizar = new System.Windows.Forms.Label();
-            this.Panel6 = new System.Windows.Forms.Panel();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Panel1.SuspendLayout();
-            this.Panel4.SuspendLayout();
-            this.MenuStrip15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            this.Panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.Panel4 = new System.Windows.Forms.Panel();
+            this.Panel1 = new System.Windows.Forms.Panel();
+            this.btncerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
+            this.MenuStrip15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            this.Panel4.SuspendLayout();
+            this.Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Panel1
+            // PictureBox3
             // 
-            this.Panel1.Controls.Add(this.Panel4);
-            this.Panel1.Controls.Add(this.Panel6);
-            this.Panel1.Location = new System.Drawing.Point(60, 62);
-            this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(963, 443);
-            this.Panel1.TabIndex = 623;
+            this.PictureBox3.BackColor = System.Drawing.Color.White;
+            this.PictureBox3.Location = new System.Drawing.Point(225, 102);
+            this.PictureBox3.Name = "PictureBox3";
+            this.PictureBox3.Size = new System.Drawing.Size(74, 49);
+            this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox3.TabIndex = 611;
+            this.PictureBox3.TabStop = false;
+            this.PictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
-            // Panel4
+            // Label5
             // 
-            this.Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.Panel4.Controls.Add(this.lblusuario);
-            this.Panel4.Controls.Add(this.Label2);
-            this.Panel4.Controls.Add(this.MenuStrip15);
-            this.Panel4.Controls.Add(this.Panel5);
-            this.Panel4.Controls.Add(this.Panel7);
-            this.Panel4.Controls.Add(this.TXTCORREO);
-            this.Panel4.Controls.Add(this.txtpass);
-            this.Panel4.Controls.Add(this.PictureBox2);
-            this.Panel4.Controls.Add(this.btnsincronizar);
-            this.Panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel4.Location = new System.Drawing.Point(543, 0);
-            this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(457, 443);
-            this.Panel4.TabIndex = 620;
+            this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.Label5.ForeColor = System.Drawing.Color.Black;
+            this.Label5.Location = new System.Drawing.Point(49, 27);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(427, 72);
+            this.Label5.TabIndex = 609;
+            this.Label5.Text = "Para que puedas Recibir reportes en tu Correo deberas Sincronizar tu Cuenta Gmail" +
+    " con ADA 369";
+            this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblusuario
             // 
@@ -145,6 +143,41 @@
             this.tocultar.ToolTipText = "Ocultar contraseña";
             this.tocultar.Visible = false;
             this.tocultar.Click += new System.EventHandler(this.tocultar_Click);
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
+            this.PictureBox1.Location = new System.Drawing.Point(28, 204);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(497, 215);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox1.TabIndex = 611;
+            this.PictureBox1.TabStop = false;
+            // 
+            // Panel6
+            // 
+            this.Panel6.BackColor = System.Drawing.Color.White;
+            this.Panel6.Controls.Add(this.PictureBox1);
+            this.Panel6.Controls.Add(this.PictureBox3);
+            this.Panel6.Controls.Add(this.Label7);
+            this.Panel6.Controls.Add(this.Label5);
+            this.Panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Panel6.Location = new System.Drawing.Point(0, 0);
+            this.Panel6.Name = "Panel6";
+            this.Panel6.Size = new System.Drawing.Size(543, 443);
+            this.Panel6.TabIndex = 621;
+            // 
+            // Label7
+            // 
+            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.Label7.ForeColor = System.Drawing.Color.Black;
+            this.Label7.Location = new System.Drawing.Point(103, 154);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(323, 47);
+            this.Label7.TabIndex = 610;
+            this.Label7.Text = "Te enseñamos Como";
+            this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel5
             // 
@@ -211,108 +244,94 @@
             this.btnsincronizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnsincronizar.Click += new System.EventHandler(this.btnsincronizar_Click);
             // 
-            // Panel6
+            // Panel4
             // 
-            this.Panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.Panel6.Controls.Add(this.PictureBox1);
-            this.Panel6.Controls.Add(this.PictureBox3);
-            this.Panel6.Controls.Add(this.Label7);
-            this.Panel6.Controls.Add(this.Label5);
-            this.Panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel6.Location = new System.Drawing.Point(0, 0);
-            this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(543, 443);
-            this.Panel6.TabIndex = 621;
+            this.Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.Panel4.Controls.Add(this.lblusuario);
+            this.Panel4.Controls.Add(this.Label2);
+            this.Panel4.Controls.Add(this.MenuStrip15);
+            this.Panel4.Controls.Add(this.Panel5);
+            this.Panel4.Controls.Add(this.Panel7);
+            this.Panel4.Controls.Add(this.TXTCORREO);
+            this.Panel4.Controls.Add(this.txtpass);
+            this.Panel4.Controls.Add(this.PictureBox2);
+            this.Panel4.Controls.Add(this.btnsincronizar);
+            this.Panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Panel4.Location = new System.Drawing.Point(543, 0);
+            this.Panel4.Name = "Panel4";
+            this.Panel4.Size = new System.Drawing.Size(457, 443);
+            this.Panel4.TabIndex = 620;
             // 
-            // PictureBox1
+            // Panel1
             // 
-            this.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(28, 204);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(497, 215);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 611;
-            this.PictureBox1.TabStop = false;
-            this.PictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            this.Panel1.Controls.Add(this.Panel4);
+            this.Panel1.Controls.Add(this.Panel6);
+            this.Panel1.Location = new System.Drawing.Point(22, 57);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(963, 443);
+            this.Panel1.TabIndex = 624;
             // 
-            // PictureBox3
+            // btncerrar
             // 
-            this.PictureBox3.Location = new System.Drawing.Point(225, 102);
-            this.PictureBox3.Name = "PictureBox3";
-            this.PictureBox3.Size = new System.Drawing.Size(74, 49);
-            this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox3.TabIndex = 611;
-            this.PictureBox3.TabStop = false;
-            this.PictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
+            this.btncerrar.BackColor = System.Drawing.Color.White;
+            this.btncerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncerrar.BackgroundImage")));
+            this.btncerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.FlatAppearance.BorderSize = 0;
+            this.btncerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrar.Location = new System.Drawing.Point(22, 10);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(5);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(56, 29);
+            this.btncerrar.TabIndex = 625;
+            this.btncerrar.UseVisualStyleBackColor = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
-            // Label7
-            // 
-            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(103, 154);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(323, 47);
-            this.Label7.TabIndex = 610;
-            this.Label7.Text = "Te enseñamos Como";
-            this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label5
-            // 
-            this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(49, 27);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(427, 72);
-            this.Label5.TabIndex = 609;
-            this.Label5.Text = "Para que puedas Recibir reportes en tu Correo deberas Sincronizar tu Cuenta Gmail" +
-    " con NexusDBPOS";
-            this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ConfigurarCorreo
+            // Correoconfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(1082, 567);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.Panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ConfigurarCorreo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Configurar Correo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Panel1.ResumeLayout(false);
-            this.Panel4.ResumeLayout(false);
-            this.Panel4.PerformLayout();
+            this.Name = "Correoconfig";
+            this.Size = new System.Drawing.Size(1028, 541);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
             this.MenuStrip15.ResumeLayout(false);
             this.MenuStrip15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            this.Panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
+            this.Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            this.Panel4.ResumeLayout(false);
+            this.Panel4.PerformLayout();
+            this.Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.Panel Panel4;
+        internal System.Windows.Forms.PictureBox PictureBox3;
+        internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label lblusuario;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.MenuStrip MenuStrip15;
         internal System.Windows.Forms.ToolStripMenuItem tver;
         internal System.Windows.Forms.ToolStripMenuItem tocultar;
+        internal System.Windows.Forms.PictureBox PictureBox1;
+        internal System.Windows.Forms.Panel Panel6;
+        internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.Panel Panel5;
         internal System.Windows.Forms.Panel Panel7;
         internal System.Windows.Forms.TextBox TXTCORREO;
         internal System.Windows.Forms.TextBox txtpass;
         internal System.Windows.Forms.PictureBox PictureBox2;
         internal System.Windows.Forms.Label btnsincronizar;
-        internal System.Windows.Forms.Panel Panel6;
-        internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.PictureBox PictureBox3;
-        internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.Label Label5;
+        internal System.Windows.Forms.Panel Panel4;
+        internal System.Windows.Forms.Panel Panel1;
+        private System.Windows.Forms.Button btncerrar;
     }
 }

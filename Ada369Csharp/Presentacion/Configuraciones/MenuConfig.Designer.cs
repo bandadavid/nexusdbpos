@@ -162,6 +162,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label5.TabIndex = 3;
             this.Label5.Text = "Respaldo de Base de datos";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // Label6
             // 
@@ -229,6 +230,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label2.TabIndex = 3;
             this.Label2.Text = "Notificaciones por Correo Electronico";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // Label38
             // 
@@ -274,6 +276,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.label9.TabIndex = 3;
             this.label9.Text = "Balanza";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // FlowLayoutPanel3
             // 
@@ -305,6 +308,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label4.TabIndex = 3;
             this.Label4.Text = "Impresoras";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // Label30
             // 
@@ -358,6 +362,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.Label31.TabIndex = 3;
             this.Label31.Text = "Diseño de Comprobantes";
             this.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label31.Click += new System.EventHandler(this.Label31_Click);
             // 
             // Label35
             // 
@@ -591,6 +596,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btnRespaldos.Size = new System.Drawing.Size(157, 47);
             this.btnRespaldos.TabIndex = 5;
             this.btnRespaldos.UseVisualStyleBackColor = true;
+            this.btnRespaldos.Click += new System.EventHandler(this.btnRespaldos_Click);
             // 
             // btncorreo
             // 
@@ -605,6 +611,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btncorreo.Size = new System.Drawing.Size(157, 47);
             this.btncorreo.TabIndex = 5;
             this.btncorreo.UseVisualStyleBackColor = true;
+            this.btncorreo.Click += new System.EventHandler(this.btncorreo_Click);
             // 
             // btnBalanza
             // 
@@ -619,6 +626,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btnBalanza.Size = new System.Drawing.Size(118, 87);
             this.btnBalanza.TabIndex = 5;
             this.btnBalanza.UseVisualStyleBackColor = true;
+            this.btnBalanza.Click += new System.EventHandler(this.btnBalanza_Click);
             // 
             // btnimpresoras
             // 
@@ -633,6 +641,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btnimpresoras.Size = new System.Drawing.Size(100, 75);
             this.btnimpresoras.TabIndex = 5;
             this.btnimpresoras.UseVisualStyleBackColor = true;
+            this.btnimpresoras.Click += new System.EventHandler(this.btnimpresoras_Click);
             // 
             // btndiseñador
             // 
@@ -647,6 +656,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             this.btndiseñador.Size = new System.Drawing.Size(115, 51);
             this.btndiseñador.TabIndex = 603;
             this.btndiseñador.UseVisualStyleBackColor = true;
+            this.btndiseñador.Click += new System.EventHandler(this.btndiseñador_Click);
             // 
             // Logo_empresa
             // 
@@ -756,6 +766,7 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Name = "MenuConfig";
             this.Size = new System.Drawing.Size(914, 626);

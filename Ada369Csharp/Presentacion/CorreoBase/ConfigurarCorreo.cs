@@ -21,7 +21,7 @@ namespace Ada369Csharp.Presentacion.CorreoBase
         private void btnsincronizar_Click(object sender, EventArgs e)
         {
             bool estado;
-            estado= Bases.enviarCorreo(TXTCORREO.Text, txtpass.Text, "Sincronizacion con Ada369 creada Correctamente", "Sincronizacion con ada369",TXTCORREO.Text, "");
+            estado= Bases.enviarCorreo(TXTCORREO.Text, txtpass.Text, "Sincronizacion con NexusDBPOS creada Correctamente", "Sincronizacion con NexusDBPOS",TXTCORREO.Text, "");
             if (estado ==true)
             {
                 editarCorreo();
@@ -47,6 +47,26 @@ namespace Ada369Csharp.Presentacion.CorreoBase
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.youtube.com/watch?v=HuZCS2OQ84g");
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tver_Click(object sender, EventArgs e)
+        {
+            
+             txtpass.PasswordChar = '\0';
+             tocultar.Visible = true;
+             tver.Visible = false;
+        }
+
+        private void tocultar_Click(object sender, EventArgs e)
+        {
+            txtpass.PasswordChar = '*';
+            tocultar.Visible = false;
+            tver.Visible = true;
         }
     }
 }

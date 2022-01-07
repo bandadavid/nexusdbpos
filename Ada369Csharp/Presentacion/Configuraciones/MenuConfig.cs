@@ -141,5 +141,95 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             Controls.Add(ctl);
             ctl.BringToFront();
         }
+
+        private void btndiseñador_Click(object sender, EventArgs e)
+        {
+            var ctl = new Diseñoticket();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label31_Click(object sender, EventArgs e)
+        {
+            var ctl = new Diseñoticket();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void btnimpresoras_Click(object sender, EventArgs e)
+        {
+            var ctl = new Impresorasconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            var ctl = new Impresorasconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void btnBalanza_Click(object sender, EventArgs e)
+        {
+            var ctl = new Balanzaconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            var ctl = new Balanzaconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void btncorreo_Click(object sender, EventArgs e)
+        {
+            var ctl = new Correoconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+            var ctl = new Correoconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void btnRespaldos_Click(object sender, EventArgs e)
+        {
+            var ctl = new Respaldosconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+            var ctl = new Respaldosconfig();
+            ctl.Dock = DockStyle.Fill;
+            ctl.Size = new Size(Width, Height);
+            Controls.Add(ctl);
+            ctl.BringToFront();
+        }
     }
 }

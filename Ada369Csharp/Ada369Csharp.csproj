@@ -263,6 +263,12 @@
     <Compile Include="Presentacion\Conexion_remota\Conexion_secundaria.Designer.cs">
       <DependentUpon>Conexion_secundaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Configuraciones\Balanzaconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Balanzaconfig.Designer.cs">
+      <DependentUpon>Balanzaconfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Configuraciones\Cajasconfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,11 +281,29 @@
     <Compile Include="Presentacion\Configuraciones\Clientesconfig.Designer.cs">
       <DependentUpon>Clientesconfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Configuraciones\Correoconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Correoconfig.Designer.cs">
+      <DependentUpon>Correoconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Diseñoticket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Diseñoticket.Designer.cs">
+      <DependentUpon>Diseñoticket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Configuraciones\Empresaconfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Empresaconfig.Designer.cs">
       <DependentUpon>Empresaconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Impresorasconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Impresorasconfig.Designer.cs">
+      <DependentUpon>Impresorasconfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Configuraciones\MenuConfig.cs">
       <SubType>UserControl</SubType>
@@ -298,6 +322,12 @@
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Proveedoresconfig.Designer.cs">
       <DependentUpon>Proveedoresconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Respaldosconfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Configuraciones\Respaldosconfig.Designer.cs">
+      <DependentUpon>Respaldosconfig.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Configuraciones\Serializacionconfig.cs">
       <SubType>UserControl</SubType>
@@ -637,14 +667,26 @@
     <EmbeddedResource Include="Presentacion\Conexion_remota\Conexion_secundaria.resx">
       <DependentUpon>Conexion_secundaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Balanzaconfig.resx">
+      <DependentUpon>Balanzaconfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Cajasconfig.resx">
       <DependentUpon>Cajasconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Clientesconfig.resx">
       <DependentUpon>Clientesconfig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Correoconfig.resx">
+      <DependentUpon>Correoconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Diseñoticket.resx">
+      <DependentUpon>Diseñoticket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Empresaconfig.resx">
       <DependentUpon>Empresaconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Impresorasconfig.resx">
+      <DependentUpon>Impresorasconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\MenuConfig.resx">
       <DependentUpon>MenuConfig.cs</DependentUpon>
@@ -654,6 +696,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Proveedoresconfig.resx">
       <DependentUpon>Proveedoresconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Configuraciones\Respaldosconfig.resx">
+      <DependentUpon>Respaldosconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Configuraciones\Serializacionconfig.resx">
       <DependentUpon>Serializacionconfig.cs</DependentUpon>
