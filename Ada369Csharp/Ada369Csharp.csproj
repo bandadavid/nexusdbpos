@@ -473,6 +473,7 @@
     <Compile Include="Presentacion\PRODUCTOS_OK\Productos_ok.Designer.cs">
       <DependentUpon>Productos_ok.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\PRODUCTOS_OK\SLDocument.cs" />
     <Compile Include="Presentacion\REPORTES\Impresion_de_comprobantes\Ticket_report.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -574,6 +575,12 @@
     </Compile>
     <Compile Include="Presentacion\USUARIOS_Y_PERMISOS\usuariosok.Designer.cs">
       <DependentUpon>usuariosok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Ventas\Puntodeventa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Ventas\Puntodeventa.Designer.cs">
+      <DependentUpon>Puntodeventa.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\VENTAS_MENU_PRINCIPAL\CANTIDAD_A_GRANEL.cs">
       <SubType>Form</SubType>
@@ -819,6 +826,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\USUARIOS_Y_PERMISOS\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Ventas\Puntodeventa.resx">
+      <DependentUpon>Puntodeventa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\VENTAS_MENU_PRINCIPAL\CANTIDAD_A_GRANEL.resx">
       <DependentUpon>CANTIDAD_A_GRANEL.cs</DependentUpon>

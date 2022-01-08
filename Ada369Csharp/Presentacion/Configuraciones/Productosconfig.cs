@@ -1113,5 +1113,11 @@ namespace Ada369Csharp.Presentacion.Configuraciones
             }
 
         }
+
+        private void ToolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            Presentacion.PRODUCTOS_OK.Asistente_de_importacionExcel frm = new Presentacion.PRODUCTOS_OK.Asistente_de_importacionExcel();
+            frm.ShowDialog();
+        }
     }
 }

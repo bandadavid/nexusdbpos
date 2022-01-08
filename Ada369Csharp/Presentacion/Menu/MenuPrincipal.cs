@@ -1,6 +1,7 @@
 ﻿using Ada369Csharp.Datos;
 using Ada369Csharp.Presentacion.Configuraciones;
 using Ada369Csharp.Presentacion.LICENCIAS_MENBRESIAS;
+using Ada369Csharp.Presentacion.Ventas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,7 @@ namespace Ada369Csharp.Presentacion.Menu
         private void DibujarBotones()
         {
             panelbotones.Controls.Clear();
-            var botones = new string[] { "Vender", "SUNAT", "Configuraciones", "Reportes", "Inventarios", "Panel control" };
+            var botones = new string[] { "Vender", "SRI", "Configuraciones", "Reportes", "Inventarios", "Panel control" };
 
             foreach (string boton in botones)
             {
@@ -67,13 +68,13 @@ namespace Ada369Csharp.Presentacion.Menu
 
                 }
             }
-            if (texto == "SUNAT")
+            if (texto == "SRI")
             {
                 //Sunat();
             }
             else if (texto == "Vender")
             {
-                //Vender();
+                Vender();
             }
             else if (texto == "Configuraciones")
             {
@@ -142,6 +143,33 @@ namespace Ada369Csharp.Presentacion.Menu
             this.Controls.Add(ctl);
 
             ctl.BringToFront();
+        }
+
+        private void Puntodeventa()
+        {
+            var ctl = new Puntodeventa();
+            ctl.Size = new Size(Width, Height);
+            this.Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+        private void Vender()
+        {
+            //string resultado = null;
+            //var funcion = new Dmovicaja();
+            //funcion.MostrarCierresdeCaja(ref resultado);
+            //if (resultado == "Nuevo*****")
+            //{
+            //    Dispose();
+            //    var frmCaja = new APERTURA_DE_CAJA();
+            //    frmCaja.ShowDialog();
+            //}
+            //else if (resultado == "Aperturado")
+            //{
+            //    Puntodeventa();
+            //}
+
+            Puntodeventa();
         }
 
         private void Configuraciones()

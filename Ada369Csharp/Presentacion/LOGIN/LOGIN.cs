@@ -17,6 +17,7 @@ using Ada369Csharp.Logica;
 using Ada369Csharp.CONEXION;
 using Ada369Csharp.Datos;
 using Ada369Csharp.Presentacion.Menu;
+using Ada369Csharp.Presentacion.Ventas;
 
 namespace Ada369Csharp.Presentacion
 
@@ -747,14 +748,11 @@ namespace Ada369Csharp.Presentacion
                 if (lblRol  == administrador )
                 {
 
-                    /*editar_inicio_De_sesion();
+                    editar_inicio_De_sesion();
                     Dispose();
                     Admin_nivel_dios.DASHBOARD_PRINCIPAL  frm = new Admin_nivel_dios.DASHBOARD_PRINCIPAL();
-                    frm.ShowDialog();*/
-                    var ctl = new MenuPrincipal();
-                    ctl.Dock = DockStyle.Fill;
-                    this.Controls.Add(ctl);
-                    ctl.BringToFront();
+                    frm.ShowDialog();
+                    //Menuprincipal();
 
                 }
                 else
@@ -765,18 +763,38 @@ namespace Ada369Csharp.Presentacion
                         Dispose();
                         CAJA.APERTURA_DE_CAJA  frm = new CAJA.APERTURA_DE_CAJA();
                         frm.ShowDialog();
+                        //Puntoventa();
                        
                     }
                 else 
                     if (lblApertura_De_caja == "Aperturado" & lblRol == cajero)
                     {
                         editar_inicio_De_sesion();
+                        //Puntoventa();
                         Dispose();
                         VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK frm = new VENTAS_MENU_PRINCIPAL.VENTAS_MENU_PRINCIPALOK();
                         frm.ShowDialog();
                     }
                 }
             }
+        }
+
+        private void Puntoventa()
+        {
+
+            var ctl = new Puntodeventa();
+            ctl.Size = new Size(Width, Height);
+            this.Controls.Add(ctl);
+            ctl.BringToFront();
+        }
+
+
+        private void Menuprincipal()
+        {
+            var ctl = new MenuPrincipal();
+            ctl.Dock = DockStyle.Fill;
+            this.Controls.Add(ctl);
+            ctl.BringToFront();
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)

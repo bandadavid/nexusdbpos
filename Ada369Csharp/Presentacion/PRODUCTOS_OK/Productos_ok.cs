@@ -1420,7 +1420,7 @@ namespace Ada369Csharp.Presentacion.PRODUCTOS_OK
         private void ToolStripMenuItem15_Click(object sender, EventArgs e)
         {
             Presentacion.PRODUCTOS_OK.Asistente_de_importacionExcel frm = new Presentacion.PRODUCTOS_OK.Asistente_de_importacionExcel();
-                frm.ShowDialog();
+            frm.ShowDialog();
         }
 
         private void Productos_ok_FormClosed(object sender, FormClosedEventArgs e)
